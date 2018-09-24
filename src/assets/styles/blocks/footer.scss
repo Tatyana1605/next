@@ -1,0 +1,21 @@
+.footer {
+  background: #555b5e;
+  opacity: 0.5;
+  height: 150px;
+  // margin-top: -150px;
+}
+
+.footer__row.foorer__row_top {
+
+}
+.footer__col {
+  width: 50%;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col.footer__col_right {
+  float: right;
+}

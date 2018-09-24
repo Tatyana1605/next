@@ -1,6 +1,35 @@
 extends ../auth.layout.pug
 
 block content
-  .hello-world
-    +icon('check', 'hello-world__block')
-    .inlined-svg
+ .welcom
+  .button
+      a(href="#") Авторизоваться
+  .center
+    img(src="/assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+    h1 Татьяна Пономарева
+    p Личный сайт веб разработчика
+    ul.socials
+          -var socials = ['vk', 'gh', 'in']
+          each item in socials
+            li.socials__item
+              a(href="" class=`socials__link_${item}`).social__link
+    //- ul.welcom_vk
+    //-   li
+    //-     a(href="#")
+          
+    //-       img(src="/assets/images/icons/vk.svg", alt="" )
+    //-   li
+    //-     a(href="#")
+    //-       img(src="/assets/images/icons/telegram_logo.svg", alt="")
+    //-   li
+    //-     a(href="#")
+    //-       img(src="/assets/images/icons/in.svg", alt="")
+
+    ul.welcom_me
+      li 
+        a(href="./work.html") мои работы
+      li 
+        a(href="../about.html") обо мне
+      li 
+        a(href="./blog.html") блог
+  .bottom &copy;	Татьяна Пономарева | Созданно с любовью в LoftShool | 2018

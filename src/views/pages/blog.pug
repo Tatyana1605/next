@@ -1,0 +1,59 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Блог'
+
+block scripts
+  script(src='blog.bundle.js')
+
+block content
+  section.header
+    .header__top
+      .header__top_left
+        ul.socials
+          -var socials = ['vk', 'gh', 'in']
+          each item in socials
+            li.socials__item
+              a(href="" class=`socials__link_${item}`).social__link
+          
+      .header__top_right
+        a(href="#").btn__nav
+          span.btn__nav_decor
+          span.btn__nav_decor
+          span.btn__nav_decor
+    .header__centr
+      img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+      h2.title Блог
+      p Статьи, которые я написал
+    .header__bottom
+      .arrow-down 
+        svg('/src/assets/images/icons/arrow_down.svg') 
+  section.blog
+    .blog__top
+      svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
+        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
+        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
+    .blog__bottom
+      .blog__left
+        nav.nav__blog
+          li.nav__list Самое важное в SASS
+          li.nav__list Приёмы в вёрстке, без которых  не обходится ни один сайт
+          li.nav__list Самый необходимый набор Gulp плагинов
+          li.nav__list Почему я выбрал Jade
+      .blog__right
+        .blog__title
+          h4 Самое важное в SASS
+          .blog__data 22 августа 2019 года
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+          img(src="./assets/images/bg/1.png", alt="")
+          hr
+        .blog__title
+          h4 Самое важное в SASS
+          .blog__data 22 августа 2019 года
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
+
+
+  

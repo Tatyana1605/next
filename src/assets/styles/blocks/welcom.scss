@@ -1,0 +1,93 @@
+.welcom {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url('../assets/images/bg/hero.jpg') center center / cover no-repeat;
+}
+
+
+.button {
+  margin-top: 25px;
+  margin-right: 100px;
+  padding: 15px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  float: right;
+
+ 
+}
+
+.center {
+  height: 395px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar {
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  // overflow: hidden;
+  margin: 40px auto 20px;
+   &.norm{
+     border-radius: 0;
+     height: 445px;
+     width: 390px;
+   }
+}
+
+.socials {
+  // position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.social__link_vk {
+  background: url('../assets/images/icons/vk.svg');
+}
+
+.social__link_tel {
+  background: url('../assets/images/icons/telegram_logo.svg');
+}
+
+.social__link_in {
+  background: url('../assets/images/icons/in.svg');
+}
+
+.welcom_me {
+  background-color: #06ac98;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  &:hover {
+    background-color: #058980;
+  }
+}
+
+
+.bottom {
+  bottom: 40px;
+  left: 0;
+  position: absolute;
+  color: white;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
