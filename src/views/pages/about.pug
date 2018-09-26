@@ -14,7 +14,7 @@ block content
           -var socials = ['vk', 'gh', 'in']
           each item in socials
             li.socials__item
-              a(href="" class=`socials__link_${item}`).social__link
+              a(href="" class=`socials__link_${item}`).socials__link
           
       .header__top_right
         a(href="#").btn__nav
@@ -26,13 +26,15 @@ block content
       h1 Татьяна Пономарева
       p Личный сайт веб разработчика
     .header__bottom
-      .arrow-down кнопка
+      .arrow-down
+        a(href="#").arrow-down_btn
       
   section.about
+    .about__top
+      svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
+        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
+        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_beige
     .about__left
-      .about__triangle
-        svg.svg-trangle.svg-trangle_fill_white
-          polygon(points="0,0 0,86 500.8,86 500.8,75.5").left
       .about__title
         h2.title ОБО МНЕ
       .about__desc
@@ -40,17 +42,15 @@ block content
           .user-desc__pic
             img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="").avatar.norm
           .user-desc__info
-            h3.user-desc__title
+            .user-desc__title
               .subtitle Кто я
             .user-desc__text
               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae dolorem accusamus, est libero officia! Tempora eius, labore deserunt voluptatibus nobis eum tempore laborum, maxime expedita aperiam praesentium magni provident!
               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui voluptates sint facere labore inventore asperiores unde! Laboriosam id incidunt aut aliquid quos commodi tempora. Aperiam cumque porro placeat sed!
     .about__right
-      .about__triangle
-        svg.svg-trangle.svg-trangle_fill_beige
-          polygon(points="1000,0   1000,86   500,86   500,75.5").right
       .about__right_title
-        .subtitle Чем я могу вам быть полезен
+        .subtitle Чем я могу быть
+        .subtitle_none  вам  полезен
       .about__smol-desc
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit dolore nobis doloremque, officia error aperiam qui ex officiis aliquid. Id fuga excepturi unde numquam dignissimos iste eaque corrupti soluta.
       .about__info
@@ -66,9 +66,9 @@ block content
               .skills-row
                 .skills-row__title #{item[0]}
                 ul.skills-row__list
-                  each skill in item[1]
+                  each skills in item[1]
                     li.skills-row__item
-                      svg.skill #{skill}
+                      svg.skills #{skills}
 
   section.contacts
     map(name="").map
@@ -78,10 +78,10 @@ block content
           .subtitle Контакты
         .user-data__container
           ul.user-contacts-list
-            each item in ['skype', 'mail', 'phone', 'adress']
-              li.ul.user-contacts-list__item
+            each item in ['tiponomareva88', 'mail', 'tel', 'adress']
+              li.user-contacts-list__item
                 .contacts-cell
-                  .contacts-cell__icon
+                  .contacts-cell__icon(class=`contacts-cell__icon_${item}`)
                   .contacts-cell__title #{item}
 
   
@@ -91,7 +91,7 @@ block content
   //-     .footer__col
   //-       nav.menu
   //-         ul.menu__list 
-  //-           each item in ['Мои работы','Обо мне','Блог','Авторизация']
+  //-           each item in ['Мои работы',gmail'Обо мне','Блог','Авторизация']
   //-             li.menu__item
   //-               a.menu__link #{item}
   //-     .footer__col.footer__col_right

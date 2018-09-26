@@ -1,0 +1,65 @@
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.socials__item {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+
+}
+.socials__link {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  opacity: 0.6;
+}
+
+.socials__link_vk {
+  
+  background: svg-load('vk.svg', fill=#06ac98) center center no-repeat;
+  &:hover {
+   
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.socials__link_gh {
+  background: svg-load('github.svg', fill=#06ac98) center center no-repeat;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.socials__link_in {
+  background: svg-load('in.svg', fill=#06ac98) center center no-repeat;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+
+
+
+.arrow-down {
+  display: -webkit-box;
+  height: 20px;
+  width: 26px;
+
+}
+
+.arrow-down_btn {
+  background: svg-load('arrow_down.svg', fill=#c0cfd6) center center no-repeat;
+  height: 20px;
+  width: 26px;
+  display: -webkit-box;
+}

@@ -17,7 +17,21 @@
   border-radius: 5px;
   float: right;
 
- 
+  &:hover {
+    background: white;
+    color: #058980;
+    cursor: pointer;
+
+    .welcom__buttom {
+      color: #00bfa5;
+      font-weight: bold;
+    }
+  }
+
+}
+.welcom__buttom:hover {
+  color: #00bfa5;
+  font-weight: bold;
 }
 
 .center {
@@ -44,64 +58,12 @@
   margin: 40px auto 20px;
    &.norm{
      border-radius: 0;
-     height: 445px;
-     width: 390px;
+     height: 390px;
+     width: 440px;
    }
 }
 
-// .welcom_vk {
-//   // position: absolute;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100%;
-//   text-align: 
-// }
 
-// .welcom_vk_item {
-  
-//   margin-right: 25px;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
-// .welcom_vk_link {
-//   background: svg-load('vk.svg', fill = #058980) center center no-repeat;
-// }
-
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-
-}
-
-.socials__item {
-  display: block;
-  height: 30px;
-  width: 30px;
-  opacity: 0.6;
-
-}
-.socials__link {
-  height: 30px;
-  width: 30px;
-  opacity: 0.6;
-}
-
-.socials__link_vk {
-  
-  background: svg-load('vk.svg', fill=#ffffff);
-}
-
-.socials__link_gh {
-  background: svg-load('github.svg', fill=#ffffff);
-}
-
-.socials__link_in {
-  background: svg-load('in.svg', fill=#ffffff);
-}
 
 .welcom_me {
   

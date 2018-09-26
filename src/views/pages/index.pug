@@ -3,7 +3,7 @@ extends ../auth.layout.pug
 block content
  .welcom
   .button
-      a(href="#") Авторизоваться
+      a(href="#").welcom__buttom Авторизоваться
   .center
     img(src="/assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
     h1 Татьяна Пономарева
@@ -13,17 +13,7 @@ block content
           each item in socials
             li.socials__item
               a(href="#" class=`socials__link_${item}`).socials__link
-    //- ul.welcom_vk
-    //-   li.welcom_vk_item
-    //-     a(href="#").welcom_vk_link
-          
-    //-       //- img(src="/assets/images/bg/vk.png", alt="" )
-    //-   li.welcom_vk_item
-    //-     a(href="#")
-    //-       img(src="/assets/images/bg/in.png", alt="")
-    //-   li.welcom_vk_item
-    //-     a(href="#")
-    //-       img(src="/assets/images/bg/gh.png", alt="")
+   
 
     ul.welcom_me
       li.welcom_me_item_left 

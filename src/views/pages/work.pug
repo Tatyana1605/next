@@ -14,7 +14,7 @@ block content
           -var socials = ['vk', 'gh', 'in']
           each item in socials
             li.socials__item
-              a(href="#" class=`socials__link_${item}`).social__link
+              a(href="#" class=`socials__link_${item}`).socials__link
           
       .header__top_right
         a(href="#").btn__nav
@@ -26,16 +26,19 @@ block content
       h1 Татьяна Пономарева
       p Личный сайт веб разработчика
     .header__bottom
-      .arrow-down кнопка
+      .arrow-down
+        a(href="#").arrow-down_btn
   section.work
     .work__top 
       svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
-        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
-        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
-    .work__title Мои работы
+        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
+        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_white
+    .work__title
+      .title Мои работы
     .work__slider
       .work__slider_left
-        .subtitle Сайт школы онлайн образования
+        .subtitle Сайт школы онлайн
+        .subtitle_none образования
         hr
         .work__slider_title HTML CSS JS
         hr
@@ -45,8 +48,10 @@ block content
         img(src="/assets/images/bg/3.png", alt="")
         img(src="/assets/images/bg/4.png", alt="")
   section.work__about
-    .work__title 
-      .title__header Что обо мне говорят?
+    .work__about_title 
+      .title__header 
+        .title Что обо мне 
+        .title_none говорят?
     .work__comments
       .work__comment
         .work__comment_text

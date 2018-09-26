@@ -39,16 +39,16 @@
   align-items: stretch;
   
   z-index: 1000;
-  height: 40px;
+  height: 36px;
   width: 40px;
   margin: 20px;
 }
 
 .btn__nav_decor {
   display: inline-block;
-  height: 5px;
+  height: 4px;
   width: 40px;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: white;
 }
 .header__centr {
@@ -75,10 +75,6 @@
 
 }
 
-.arrow-down {
-  background: svg-load('./src/assets/images/icons/arrow_down.svg');
-}
-
 .svg-traingle .left{
   fill: #4CAF50;
 }
@@ -90,6 +86,20 @@
   display: flex;
   flex: 1;
 }
+
+.about__top {
+  position: absolute;
+  margin-top: -150px;
+  width: 100%;
+}
+.triangle.triangle_fill_white {
+  fill: #efeee9;
+}
+
+.triangle.triangle_fill_beige {
+  fill: #eeebdf;
+}
+
 .about__left {
   top: 0;
   left: 0;
@@ -97,6 +107,8 @@
   position: relative;
   background: #efeee9;
   display: flex;
+  align-items: end;
+
   // align-items: flex-end;
 }
 
@@ -104,9 +116,19 @@
   position: absolute;
   bottom: 100%;
 }
+.about__title {
+ width: 45%;
+ background: url('/assets/images/bg/8.png') center center no-repeat;
+ 
+}
+.about__desc {
+ width: 55%;
+ padding: 10px;
+}
+.user-desc__title {
+  text-align: center;
+  margin-bottom: 30px;
 
-.title {
-  font-size: 42px;
 }
 
 
@@ -117,5 +139,100 @@
   width: 50%;
   position: relative;
   background: #eeebdf;
+  padding: 10px;
 }
 
+.about__right_title {
+  text-align: center;
+}
+.about__info {
+  height: 80%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.skills-row__list {
+  display: flex;
+  align-items: center;
+}
+
+.skills-row__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.contacts {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url('../assets/images/bg/map.png') center center / cover no-repeat
+}
+
+.contacts__conteiner {
+  width: 380px;
+  height: 290px;
+  background: #fff;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  
+
+}
+
+.user-data__title {
+  margin: 30px auto;
+  text-align: center;
+}
+
+
+.user-data__container {
+  margin-left: 40px;
+}
+
+.user-contacts-list__item {
+  margin-bottom: 20px;
+}
+
+.contacts-cell {
+  display: flex;
+}
+
+.contacts-cell__icon {
+  height: 30px;
+  width: 30px;
+
+}
+
+.contacts-cell__icon_tiponomareva88 {
+  background: svg-load('skype.svg', fill=#00bea4) center center no-repeat;
+  } 
+
+.contacts-cell__icon_mail {
+   background: svg-load('envelope.svg', fill=#00bea4) center center no-repeat;
+  }
+.contacts-cell__icon_tel {
+    background: svg-load('phone.svg', fill=#00bea4) center center no-repeat;
+  }
+
+.contacts-cell__icon_adress {
+    background: svg-load('map_marker.svg', fill=#00bea4) center center no-repeat;
+  }
+  
+.contacts-cell__title {
+  margin: auto 10px;
+
+}
