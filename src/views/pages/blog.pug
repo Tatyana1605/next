@@ -23,33 +23,38 @@ block content
           span.btn__nav_decor
     .header__centr
       img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
-      h2.title Блог
+      h2.title.title_blog Блог
       p Статьи, которые я написал
     .header__bottom
       .arrow-down
         a(href="#").arrow-down_btn
   section.blog
-    .blog__top
-      svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
-        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
-        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
+    //- .blog__top
+    //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
+    //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
+    //-     polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
     .blog__bottom
       .blog__left
         nav.nav__blog
-          li.nav__list Самое важное в SASS
-          li.nav__list Приёмы в вёрстке, без которых  не обходится ни один сайт
-          li.nav__list Самый необходимый набор Gulp плагинов
-          li.nav__list Почему я выбрал Jade
+          ul.nav__item
+            li.nav__list 
+              a(href="#").nav__list_a Самое важное в SASS
+            li.nav__list
+              a(href="#").nav__list_a Приёмы в вёрстке, без которых  не обходится ни один сайт
+            li.nav__list 
+              a(href="#").nav__list_a Самый необходимый набор Gulp плагинов
+            li.nav__list
+              a(href="#").nav__list_a Почему я выбрал Jade
       .blog__right
-        .blog__title
-          h4 Самое важное в SASS
+        .blog__text
+          .blog__title Самое важное в SASS
           .blog__data 22 августа 2019 года
           p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
-          img(src="./assets/images/bg/1.png", alt="")
-          hr
-        .blog__title
-          h4 Самое важное в SASS
+          img(src="./assets/images/bg/1.png", alt="").blog__img
+          hr(color="#f5f2f0", height="2px")
+        .blog__text
+          .blog__title Самое важное в SASS
           .blog__data 22 августа 2019 года
           p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!

@@ -2,10 +2,14 @@
   background: #555b5e;
   opacity: 0.5;
   height: 150px;
-  // margin-top: -150px;
+  margin-top: -150px;
+  
 }
 
 .footer__row.foorer__row_top {
+  height: 50%;
+  display: flex;
+  align-items: center;
 
 }
 .footer__col {
@@ -16,6 +20,18 @@
   align-items: center;
 }
 
+.menu__item {
+  margin-left: 40px;
+
+}
+.footer__row {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  color: white;
+}
 .footer__col.footer__col_right {
   float: right;
 }

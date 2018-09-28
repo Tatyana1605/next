@@ -28,6 +28,9 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #373e42;
+  &_blog {
+    color: white;
+  }
 }
 
 .title::after, 
@@ -39,3 +42,4 @@
   background-color: #d5d6d7;
   margin: 20px;
 }
+

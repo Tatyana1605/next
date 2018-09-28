@@ -29,10 +29,10 @@ block content
       .arrow-down
         a(href="#").arrow-down_btn
   section.work
-    .work__top 
-      svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
-        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
-        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_white
+    //- .work__top 
+    //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
+    //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
+    //-     polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_white
     .work__title
       .title Мои работы
     .work__slider
@@ -81,7 +81,7 @@ block content
             textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
         .form__row
           input(type="submit" value="Отправить").form__input_buttom
-          input(type="reset" value="Очистить").form__input_buttom
+          input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
     .header__bottom
       .arrow__down
         img(src="/assets/images/icons/arrow_down.svg", alt="")

@@ -5,5 +5,10 @@
   "text-color": "#455a64",
   "grey": "#373e42",
   "light-grey": "#dfdcd5",
-  "test" : "#000"
+  "test" : "#000",
+  "HD": "1800px",
+  "desktop": "1200px",
+  "laptop": "992px",
+  "tablets": "768px",
+  "phone": "480px"
 }

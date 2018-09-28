@@ -30,10 +30,10 @@ block content
         a(href="#").arrow-down_btn
       
   section.about
-    .about__top
-      svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
-        polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
-        polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_beige
+    //- .about__top
+    //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
+    //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white
+    //-     polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_beige
     .about__left
       .about__title
         h2.title ОБО МНЕ
@@ -78,11 +78,11 @@ block content
           .subtitle Контакты
         .user-data__container
           ul.user-contacts-list
-            each item in ['tiponomareva88', 'mail', 'tel', 'adress']
+            each item in ['skype', 'mail', 'tel', 'adress']
               li.user-contacts-list__item
                 .contacts-cell
                   .contacts-cell__icon(class=`contacts-cell__icon_${item}`)
-                  .contacts-cell__title #{item}
+                  a(href="#").contacts-cell__title #{item}
 
   
   

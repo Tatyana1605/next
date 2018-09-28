@@ -45,7 +45,7 @@
   position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 1280px;
     width: 100%;
     background: url('./assets/images/bg/5.png');
 }
@@ -102,4 +102,18 @@
 
   
   width: 90%;
+}
+
+.form__input_buttom {
+  display: inline-block;
+  border: 0px;
+  background: #26bbaa;
+  color: white;
+  border-radius: 0 0 0 5px;
+  padding: 15px 40px;
+  cursor: pointer;
+  &_clear {
+    border-radius: 0 0 5px 0;
+    background: #268c8b;
+  }
 }
