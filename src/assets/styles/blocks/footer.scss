@@ -3,6 +3,11 @@
   opacity: 0.5;
   height: 150px;
   margin-top: -150px;
+
+  // @include tablets {
+  //   height: 235px;
+  //   margin-top: -235px;
+  // }
   
 }
 

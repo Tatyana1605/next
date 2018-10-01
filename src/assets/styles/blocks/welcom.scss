@@ -8,10 +8,21 @@
   
 }
 
+.welcom__btn {
+  display: flex;
+  flex-direction: row-reverse; 
+  padding-top: 25px;
+  padding-right: 25px;
+  @include phone {
+    padding-top: 10px;
+    padding-right: 0;
+    justify-content: center;
+  }
+}
 
 .button {
-  margin-top: 25px;
-  margin-right: 100px;
+  // margin-top: 25px;
+  // margin-right: 100px;
   padding: 15px 30px;
   color: white;
   border: 2px solid white;
@@ -117,4 +128,11 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+
+  @include phone {
+    left: 0;
+    margin-right: 0;
+    transform: none;
+    text-align: center;
+  }
 }

@@ -70,6 +70,7 @@
   ],
   "dependencies": {
     "normalize.css": "^7.0.0",
+    "postcss-simple-vars": "^5.0.1",
     "promptly": "^3.0.3",
     "pug": "^2.0.3",
     "request": "^2.87.0",

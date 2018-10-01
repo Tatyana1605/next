@@ -126,7 +126,11 @@
   display: flex;
   align-items: end;
 
-  // align-items: flex-end;
+  // @include desktop {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  
 }
 
 .about__triangle {
@@ -136,11 +140,17 @@
 .about__title {
  width: 45%;
  background: url('/assets/images/bg/8.png') center center no-repeat;
- 
+  // @include desktop  {
+  //    width: 100%;
+  // }
 }
 .about__desc {
  width: 55%;
  padding: 10px;
+  //  @include desktop  {
+  //    width: 100%;
+  //    text-align: center;
+  // }
 }
 .user-desc__title {
   text-align: center;
