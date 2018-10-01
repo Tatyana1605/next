@@ -1,7 +1,3 @@
-import "./modules/example";
-import "./modules/skills";
-import "./modules/nav";
-
 // $(document).ready(function(){
 //   $('.btn__nav').on('click', function(e){
 //     e.preventDefault();
