@@ -10,20 +10,26 @@ html(lang="ru")
     
     title Portfolio | #{title}
     link(rel='stylesheet' href='main.min.css')
+    script(src = "https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js")
+
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFQaVKUAOdKasTQ71YN4AFYq-8ug_Li5g")
 
   body
     .wrapper
       .maincontent
         block content
+      
 
       include ./common/footer.pug
-
-    //- script(src='bootloader.bundle.js')
-    //- script(src='vendor.bundle.js')
-    script(src='about.bundle.js')
-    script(src='blog.bundle.js')
-    script(src='work.bundle.js')
+      include ./components/_enerty.pug
+      include ./pages/nav.pug
+    script(src='bootloader.bundle.js')
+    script(src='vendor.bundle.js')
+    script(src="skills.js")
+    //- script(src='about.bundle.js')
+    //- script(src='blog.bundle.js')
+    //- script(src='works.bundle.js')
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 
     block scripts
 

@@ -18,9 +18,37 @@ block content
 
     ul.welcom_me
       li.welcom_me_item_left 
-        a(href="./work.html") мои работы
+        a(href="./works.html") мои работы
       li.welcom_me_item_centr
         a(href="./about.html") обо мне
       li.welcom_me_item_right  
         a(href="./blog.html") блог
   .bottom &copy;	Татьяна Пономарева | Созданно с любовью в LoftShool | 2018
+  .center__login
+    form(action="").form__lodin
+      .subtitle Связаться со мной
+      .form__row
+        label(for="").form__block
+         input(maxlength="25" size="40" name="login").form__input_login
+      .form__row
+        label(for="").form__block
+         input(type="password" maxlength="25" size="40" name="password").form__input_login
+      .form__row
+        label(for="").form__chec
+          input(type="checkbox" name="checkbox" checked).form__input_chec
+          span.form__chec_text Я человек
+            span.form__btn_chec
+      .form__row Вы точно не робот?
+        label(for="").form__radio
+          input(type="radio" name="radio").form__input_radio
+          span.form__radio_text Да
+            span.form__btn
+        label(for="").form__radio
+          input(type="radio" name="radio").form__input_radio
+          span.form__radio_text Не уверен
+            span.form__btn
+      .form__row
+        input(type="submit" value="На главную").form__input_sub
+        input(type="submit" value="Отправить").form__input_sub.form__input_sub_sub
+
+
