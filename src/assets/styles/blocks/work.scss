@@ -126,8 +126,23 @@
 .form {
   height: 440px;
   width: 385px;
+  overflow: hidden;
+  position: relative;
+  
 }
- 
+
+.work__consol {
+  background: url('./assets/images/bg/5.png');
+  filter: blur(5px);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.work__form-centr {
+  position: relative;
+  z-index: 2;
+} 
 .form__row {
   margin-top: 20px;
 
@@ -163,7 +178,7 @@
   background: #26bbaa;
   color: white;
   border-radius: 0 0 0 5px;
-  padding: 15px 40px;
+  padding: 13px 40px;
   cursor: pointer;
   &_clear {
     border-radius: 0 0 5px 0;

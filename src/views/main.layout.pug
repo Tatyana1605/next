@@ -22,14 +22,19 @@ html(lang="ru")
 
       include ./common/footer.pug
       include ./components/_enerty.pug
-      include ./pages/nav.pug
-    script(src='bootloader.bundle.js')
-    script(src='vendor.bundle.js')
-    script(src="skills.js")
-    //- script(src='about.bundle.js')
-    //- script(src='blog.bundle.js')
-    //- script(src='works.bundle.js')
-    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+      include ./common/nav.pug
+      //- script(src='bootloader.bundle.js')
+      //- script(src='vendor.bundle.js')
+      //- script(src="skills.js")
+      
+    
+      script(src='about.bundle.js')
+      script(src='blog.bundle.js')
+      script(src='works.bundle.js')
+      //- script(src="skills.js")
+      script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
+
 
     block scripts
 

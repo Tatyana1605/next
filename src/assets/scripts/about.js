@@ -1,19 +1,6 @@
 import "./modules/example";
-import "./modules/skills";
+
 import "./modules/nav";
 
-// $(document).ready(function(){
-//   $('.btn__nav').on('click', function(e){
-//     e.preventDefault();
-//     $('.nav').addClass('nav__activ');
-//   });
+import "./modules/skills";
 
-//   $('.nav__closes').on('click', function(e){
-//     e.preventDefault();
-//     $('.nav').removeClass('nav__activ');
-//   });
-
-//   $('.nav__item').on('click', function(e){
-//     $('.nav').removeClass('nav__activ');
-//   })
-// });

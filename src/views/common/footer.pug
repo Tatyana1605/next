@@ -3,15 +3,15 @@ footer.footer
       .footer__col
         nav.menu
           ul.menu__list 
-            each item in ['Мои работы','Обо мне','Блог','Авторизация']
+            each item in [['Мои работы', ['./works.html']],['Обо мне', ['./about.html']], ['Блог', ['./blog.html']], ['Авторизация', [ ]]]
               li.menu__item
-                a(href="#").menu__link #{item}
+                a(href="#{item[1]}").menu__link #{item[0]}
       .footer__col.footer__col_right
         ul.socials
           -var socials = ['vk', 'gh', 'in']
           each item in socials
             li.socials__item
-              a(href="" class=`socials__link_${item}`).social__link
+              a(href="" class=`socials__link_footer_${item}`).social__link.social__link_footer
   hr(color="#949799")
   .footer__row
     .footer__col

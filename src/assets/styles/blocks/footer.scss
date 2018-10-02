@@ -23,14 +23,19 @@
 .menu__list {
   display: flex;
   align-items: center;
+  
 }
 
 .menu__item {
   margin-left: 40px;
-
+  color: #ffffff;
+  opacity: 1;
+  &:hover{
+    opacity: 0.7;
+  }
 }
 .footer__row {
-  padding: 10px;
+ padding: 0 15px;
   display: flex;
   align-items: center;
 }
@@ -39,4 +44,6 @@
 }
 .footer__col.footer__col_right {
   float: right;
+  display: flex;
+    justify-content: flex-end;
 }

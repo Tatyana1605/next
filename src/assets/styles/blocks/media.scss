@@ -1,6 +1,3 @@
-// @function rem($px){
-//   @return $px / 16px + 0rem;
-// }
 
 @mixin HD {
   @media screen and (max-width: $HD) {

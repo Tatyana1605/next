@@ -4,7 +4,7 @@ block variables
   - var title = 'Мои работы'
 
 block scripts
-  script(src='work.bundle.js')
+  script(src='works.bundle.js')
 
 block content
   section.header
@@ -14,7 +14,7 @@ block content
           -var socials = ['vk', 'gh', 'in']
           each item in socials
             li.socials__item
-              a(href="#" class=`socials__link_${item}`).socials__link
+              a(href="#" class=`socials__link_white_${item}`).socials__link.socials__link_white
           
       .header__top_right
         a(href="#").btn__nav
@@ -54,6 +54,7 @@ block content
         .title_none говорят?
     .work__comments
       .work__comment
+        
         .work__comment_text
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde blanditiis tempora ducimus est amet, aperiam, fuga vero, facilis autem error adipisci quae maxime laudantium doloremque nostrum consectetur? Sequi, blanditiis!
         .work__comment_com
@@ -73,19 +74,21 @@ block content
             .work__comment_works Основатель школы LoftSchool
     .work__form
       form(action="").form
-        .subtitle Связаться со мной
-        .form__row
-          label(for="").form__block
-            input(type="text" placeholder="Имя" required).form__input
-        .form__row
-          label(for="").form__block
-            input(type="email" placeholder="Email" required).form__input
-        .form__row
-          label(for="").form__block
-            textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
-        .form__row
-          input(type="submit" value="Отправить").form__input_buttom
-          input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
+        .work__consol
+        .work__form-centr
+          .subtitle Связаться со мной
+          .form__row
+            label(for="").form__block
+              input(type="text" placeholder="Имя" required).form__input
+          .form__row
+            label(for="").form__block
+              input(type="email" placeholder="Email" required).form__input
+          .form__row
+            label(for="").form__block
+              textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
+          .form__row
+            input(type="submit" value="Отправить").form__input_buttom
+            input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
     .header__bottom
       .arrow__down
         img(src="/assets/images/icons/arrow_down.svg", alt="")
