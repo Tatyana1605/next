@@ -26,13 +26,13 @@ block content
   .bottom &copy;	Татьяна Пономарева | Созданно с любовью в LoftShool | 2018
   .center__login
     form(action="").form__lodin
-      .subtitle Связаться со мной
+      .subtitle Авторизуйтесь
+      .form__row 
+        label(for="").form__block
+         input(maxlength="25" size="40" name="login" placeholder="Логин").form__input_login
       .form__row
         label(for="").form__block
-         input(maxlength="25" size="40" name="login").form__input_login
-      .form__row
-        label(for="").form__block
-         input(type="password" maxlength="25" size="40" name="password").form__input_login
+         input(type="password" maxlength="25" size="40" name="password" placeholder="Пароль").form__input_login
       .form__row
         label(for="").form__chec
           input(type="checkbox" name="checkbox" checked).form__input_chec
@@ -49,6 +49,6 @@ block content
             span.form__btn
       .form__row
         input(type="submit" value="На главную").form__input_sub
-        input(type="submit" value="Отправить").form__input_sub.form__input_sub_sub
+        input(type="submit" value="Войти").form__input_sub.form__input_sub_sub
 
 

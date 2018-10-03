@@ -60,6 +60,8 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+
+ 
 }
 
 .avatar {
@@ -151,6 +153,11 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+
+  &__activ {
+    top: 50%;
+    opacity: 0.9;
+  }
 }
 
 .form__block {
@@ -160,4 +167,32 @@
 
   height: 45px;
   width: 90%;
+}
+
+.form__input_login {
+  border-radius: 3px;
+    border: #fff;
+    outline: none;
+    height: 45px;
+    width: 90%;
+}
+
+.form__input_sub {
+  display: inline-block;
+    border: 0;
+    background: #26bbaa;
+    color: #fff;
+    border-radius: 0 0 0 5px;
+    padding: 13px 40px;
+    cursor: pointer;
+    width: 50%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+
+  &_sub {
+    border-radius: 0 0 5px 0;
+    right: 0;
+    left: 50%;
+  }
 }

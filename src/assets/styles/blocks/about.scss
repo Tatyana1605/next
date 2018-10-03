@@ -154,7 +154,10 @@
 }
 .about__title {
  width: 45%;
- background: url('/assets/images/bg/8.png') center center no-repeat;
+ background: url('/assets/images/bg/8.png') no-repeat;
+ height: 100%;
+ padding-top: 45px;
+ text-align: center;
   // @include desktop  {
   //    width: 100%;
   // }

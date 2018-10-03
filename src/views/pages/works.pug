@@ -36,25 +36,26 @@ block content
     .work__title
       .title Мои работы
     .work__slider
-      .work__slider_left
-        .subtitle Сайт школы онлайн
-        .subtitle_none образования
-        hr
-        .work__slider_title HTML CSS JS
-        hr
-        a(href="#").buttom__sait Посмотреть сайт
-      .work__slider_right 
-        img(src="/assets/images/bg/2.png", alt="")
-        img(src="/assets/images/bg/3.png", alt="")
-        img(src="/assets/images/bg/4.png", alt="")
+      #slider-component
+      //- .work__slider_left
+      //-   .subtitle Сайт школы онлайн
+      //-   .subtitle_none образования
+      //-   hr
+      //-   .work__slider_title HTML CSS JS
+      //-   hr
+      //-   a(href="#").buttom__sait Посмотреть сайт
+      //- .work__slider_right 
+      //-   img(src="/assets/images/bg/2.png", alt="")
+      //-   img(src="/assets/images/bg/3.png", alt="")
+      //-   img(src="/assets/images/bg/4.png", alt="")
   section.work__about
     .work__about_title 
       .title__header 
-        .title Что обо мне 
-        .title_none говорят?
+        .title Что обо мне говорят?
     .work__comments
       .work__comment
-        
+
+        .work__comment_pic 	
         .work__comment_text
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde blanditiis tempora ducimus est amet, aperiam, fuga vero, facilis autem error adipisci quae maxime laudantium doloremque nostrum consectetur? Sequi, blanditiis!
         .work__comment_com
@@ -64,6 +65,7 @@ block content
             .work__comment_name Ковальчук Дмитрий
             .work__comment_works Основатель школы LoftSchool
       .work__comment
+        .work__comment_pic
         .work__comment_text
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde blanditiis tempora ducimus est amet, aperiam, fuga vero, facilis autem error adipisci quae maxime laudantium doloremque nostrum consectetur? Sequi, blanditiis!
         .work__comment_com
@@ -89,7 +91,7 @@ block content
           .form__row
             input(type="submit" value="Отправить").form__input_buttom
             input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
-    .header__bottom
-      .arrow__down
-        img(src="/assets/images/icons/arrow_down.svg", alt="")
+    .work__bottom
+      .arrow-down
+        a(href="#").arrow-down_btn
     

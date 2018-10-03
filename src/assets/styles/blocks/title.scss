@@ -6,14 +6,17 @@
 
 .subtitle,
 .subtitle_none {
-  font-size: 29px;
+  font-family: 'bernier';
+  font-size: 35px;
   text-transform: uppercase;
   font-weight: bold;
   color: #373e42;
+  text-align: center;
 }
 
 .subtitle::after, 
 .subtitle::before {
+  
   content: '';
   display: inline-block;
   height: 6px;
@@ -24,10 +27,12 @@
 
 .title {
   // background: url('/assets/images/bg/8.png') center center no-repeat;
+  font-family: 'bernier';
   font-size: 63px;
   text-transform: uppercase;
   font-weight: bold;
   color: #373e42;
+  text-align: center;
   &_blog {
     color: white;
   }
