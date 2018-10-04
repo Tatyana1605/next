@@ -8,6 +8,8 @@ block scripts
 
 block content
   section.header
+    .header__img
+      img(src="./assets/images/bg/hero.jpg", alt="").header__image
     .header__top
       .header__top_left
         ul.socials
@@ -21,6 +23,8 @@ block content
           span.btn__nav_decor
           span.btn__nav_decor
           span.btn__nav_decor
+    .header__portfolio
+      img(src="./assets/images/bg/header.png", alt="").portfolio__image
     .header__centr
       img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
       h1 Татьяна Пономарева
@@ -48,10 +52,12 @@ block content
       //-   img(src="/assets/images/bg/2.png", alt="")
       //-   img(src="/assets/images/bg/3.png", alt="")
       //-   img(src="/assets/images/bg/4.png", alt="")
-  section.work__about
+  section.work__tit
     .work__about_title 
       .title__header 
         .title Что обо мне говорят?
+  section.work__about
+    
     .work__comments
       .work__comment
 
@@ -78,19 +84,20 @@ block content
       form(action="").form
         .work__consol
         .work__form-centr
-          .subtitle Связаться со мной
-          .form__row
-            label(for="").form__block
-              input(type="text" placeholder="Имя" required).form__input
-          .form__row
-            label(for="").form__block
-              input(type="email" placeholder="Email" required).form__input
-          .form__row
-            label(for="").form__block
-              textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
-          .form__row
-            input(type="submit" value="Отправить").form__input_buttom
-            input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
+          .work__blur
+            .subtitle Связаться со мной
+            .form__row
+              label(for="").form__block
+                input(type="text" placeholder="Имя" required).form__input
+            .form__row
+              label(for="").form__block
+                input(type="email" placeholder="Email" required).form__input
+            .form__row
+              label(for="").form__block
+                textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
+            .form__row
+              input(type="submit" value="Отправить").form__input_buttom
+              input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear
     .work__bottom
       .arrow-down
         a(href="#").arrow-down_btn

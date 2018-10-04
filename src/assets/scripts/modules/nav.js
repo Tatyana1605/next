@@ -13,3 +13,4 @@ $(document).ready(function(){
     $('.nav').removeClass('nav__activ');
   })
 });
+
