@@ -4960,6 +4960,10 @@ javascript-natural-sort@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.9:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.1.tgz#e02813181cd53002888e918935467acb2910e596"
@@ -6905,6 +6909,13 @@ postcss-plugin-utilities@^2.0.0:
     postcss "^6.0.19"
     postcss-value-parser "^3.3.0"
 
+postcss-pxtorem@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-pxtorem/-/postcss-pxtorem-4.0.1.tgz#9c64d0efe4885473cc1cb0305c6ffc3ebb45b1cd"
+  dependencies:
+    object-assign "^4.1.0"
+    postcss "^5.2.10"
+
 postcss-reduce-initial@^4.0.0-rc.2:
   version "4.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-4.0.0-rc.2.tgz#ab2e1cca7903745a77b99630445c939152e0cd62"
@@ -6952,6 +6963,12 @@ postcss-selector-parser@^3.0.0-rc.0, postcss-selector-parser@^3.1.1:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
+postcss-simple-vars@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-simple-vars/-/postcss-simple-vars-5.0.1.tgz#850971fdfedf236ea1c815569ce261dab8623aa2"
+  dependencies:
+    postcss "^7.0.2"
+
 postcss-svgo@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/postcss-svgo/-/postcss-svgo-2.1.6.tgz#b6df18aa613b666e133f08adb5219c2684ac108d"
@@ -6982,7 +6999,7 @@ postcss-value-parser@^3.0.0, postcss-value-parser@^3.2.3, postcss-value-parser@^
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@^5.0.14:
+postcss@^5.0.14, postcss@^5.2.10:
   version "5.2.18"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
   dependencies:

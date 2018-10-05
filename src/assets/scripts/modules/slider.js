@@ -114,7 +114,7 @@ new Vue ({
     },
 
     loopCurrentIndex(value) {
-      const worksNumCountedFromZero = this.works.lenght - 1;
+      const worksNumCountedFromZero = this.works.length - 1;
       if (value > worksNumCountedFromZero) this.currentIndex = 0;
       if (value < 0) this.currentIndex = worksNumCountedFromZero;
     },

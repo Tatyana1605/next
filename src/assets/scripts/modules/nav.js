@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 $(document).ready(function(){
   $('.btn__nav').on('click', function(e){
     e.preventDefault();
@@ -9,7 +11,7 @@ $(document).ready(function(){
     $('.nav').removeClass('nav__activ');
   });
 
-  $('.nav__item').on('click', function(e){
+  $('.nav__item').on('click', function(){
     $('.nav').removeClass('nav__activ');
   })
 });

@@ -37,6 +37,7 @@
   // background: url('/assets/images/bg/8.png') center center no-repeat;
   font-family: 'bernier';
   font-size: 63px;
+  position: relative;
   text-transform: uppercase;
   font-weight: bold;
   color: #373e42;
@@ -49,10 +50,19 @@
 .title::after, 
 .title::before {
   content: '';
+  position: absolute;
   display: inline-block;
   height: 6px;
   width: 20px;
   background-color: #d5d6d7;
   margin: 20px;
+}
+
+
+.title::after {
+  right: -20px;
+}
+.title::before {
+  left: -20px;
 }
 

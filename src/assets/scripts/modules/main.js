@@ -3,7 +3,7 @@ var parallax = (function () {
   var user = document.querySelector('.header__use');
   var sectionText = document.querySelector('.portfolio__image');
     return {
-      move: function (block, windowScroll, strafeAmount) {
+      move(block, windowScroll, strafeAmount) {
         var strafe = windowScroll / -strafeAmount + '%';
         var transformString = 'translate3d(0, ' + strafe + ', 0)';
 
@@ -13,7 +13,7 @@ var parallax = (function () {
         style.webkitTransform = transformString;
 
       },
-      init: function (wScroll) {
+      init(wScroll) {
         this.move(bg, wScroll, 45);
         this.move(sectionText, wScroll, 20);
         this.move(user, wScroll, 3);
@@ -29,14 +29,14 @@ var blur = (function () {
 
 
     return {
-      set: function () {
+      set() {
           var imgWidth = document.querySelector('.work__consol').offsetWidth,
               posLeft = -wrapper.offsetLeft,
               posTop = -wrapper.offsetTop,
               blurCss = form.style;
 
-          blurCss.backgroundSize = imgWidth + 'px' + ' ' + 'auto';
-          blurCss.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';
+          blurCss.backgroundSize = `${imgWidth} px auto`;
+          blurCss.backgroundPosition = ` ${posLeft} px ${posTop} px`;
 
         
       }

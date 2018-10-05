@@ -14,8 +14,8 @@
   position: relative;
   top: 0;
   left: 0;
-  // height: 100vh;
-  height: 780px;
+  height: 100vh;
+  min-height: 780px;
   width: 100%;
   // background: url('./assets/images/bg/hero.jpg') center center / cover no-repeat;
   clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
