@@ -7,31 +7,33 @@ block scripts
   script(src='blog.bundle.js')
 
 block content
-  section.header
-    .header__img
-      img(src="./assets/images/bg/hero.jpg", alt="").header__image
-    .header__top
-      .header__top_left
-        ul.socials
-          -var socials = ['vk', 'gh', 'in']
-          each item in socials
-            li.socials__item
-              a(href="" class=`socials__link_white_${item}`).socials__link.socials__link_white
-          
-      .header__top_right
-        a(href="#").btn__nav
-          span.btn__nav_decor
-          span.btn__nav_decor
-          span.btn__nav_decor
-    .header__portfolio
-      img(src="./assets/images/bg/header.png", alt="").portfolio__image
-    .header__centr
-      img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
-      h2.title.title_blog Блог
-      p Статьи, которые я написала
-    .header__bottom
-      .arrow-down
-        a(href="#").arrow-down_btn
+
+  section.headercolor__blog
+    .header__picture.header__picture_blog
+      .header__img
+        img(src="./assets/images/bg/hero.jpg", alt="").header__image
+      .header__top
+        .header__top_left.header__top_left_blog
+          ul.socials
+            -var socials = ['vk', 'gh', 'in']
+            each item in socials
+              li.socials__item
+                a(href="" class=`socials__link_white_${item}`).socials__link.socials__link_white
+            
+        .header__top_right.header__top_right_blog
+          a(href="#").btn__nav
+            span.btn__nav_decor
+            span.btn__nav_decor
+            span.btn__nav_decor
+      .header__portfolio.header__portfolio_blog
+        img(src="./assets/images/bg/blog.png", alt="").portfolio__image
+      .header__centr
+        img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+        h2.title.title_blog Блог
+        p Статьи, которые я написала
+      .header__bottom
+        .arrow-down
+          a(href="#").arrow-down_btn
   section.blog
     //- .blog__top
     //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")

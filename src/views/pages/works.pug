@@ -7,31 +7,33 @@ block scripts
   script(src='works.bundle.js')
 
 block content
-  section.header
-    .header__img
-      img(src="./assets/images/bg/hero.jpg", alt="").header__image
-    .header__top
-      .header__top_left
-        ul.socials
-          -var socials = ['vk', 'gh', 'in']
-          each item in socials
-            li.socials__item
-              a(href="#" class=`socials__link_white_${item}`).socials__link.socials__link_white
-          
-      .header__top_right
-        a(href="#").btn__nav
-          span.btn__nav_decor
-          span.btn__nav_decor
-          span.btn__nav_decor
-    .header__portfolio
-      img(src="./assets/images/bg/header.png", alt="").portfolio__image
-    .header__centr
-      img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
-      h1 Татьяна Пономарева
-      p Личный сайт веб разработчика
-    .header__bottom
-      .arrow-down
-        a(href="#").arrow-down_btn
+
+  section.headercolor__work
+    .header__picture
+      .header__img
+        img(src="./assets/images/bg/hero.jpg", alt="").header__image
+      .header__top
+        .header__top_left
+          ul.socials
+            -var socials = ['vk', 'gh', 'in']
+            each item in socials
+              li.socials__item
+                a(href="#" class=`socials__link_white_${item}`).socials__link.socials__link_white
+            
+        .header__top_right
+          a(href="#").btn__nav
+            span.btn__nav_decor
+            span.btn__nav_decor
+            span.btn__nav_decor
+      .header__portfolio
+        img(src="./assets/images/bg/header.png", alt="").portfolio__image
+      .header__centr
+        img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+        h1 Татьяна Пономарева
+        p Личный сайт веб разработчика
+      .header__bottom
+        .arrow-down
+          a(href="#").arrow-down_btn
   section.work
     //- .work__top 
     //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")

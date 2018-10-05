@@ -1,7 +1,22 @@
+.color__works {
+  background-color: #faf8f0;
+
+}
+
 .work__top {
   position: absolute;
   margin-top: -150px;
   width: 100%;
+}
+
+.work__title {
+  height: 188px;
+  width: 100%;
+  background: url('./assets/images/bg/9.png') center center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf8f0;
 }
 
 
@@ -27,7 +42,7 @@
     height: 1290px;
     width: 100%;
     background: url('./assets/images/bg/5.png') center center no-repeat;
-
+    
     @include phone {
       height: 1355px;
     }
