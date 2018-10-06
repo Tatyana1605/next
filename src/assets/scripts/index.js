@@ -1,9 +1,10 @@
-// import "about";
-// import "blog";
-// import "works";
+import "./about";
+import "./blog";
+import "./works";
 
-import "./modules/nav";
-import "./modules/parallax";
-import "./modules/skills";
-import "./modules/main";
-import "./modules/slider";
+// import "./modules/nav";
+// import "./modules/parallax";
+// import "./modules/skills";
+// import "./modules/main";
+// import "./modules/slider";
+// import "./modules/welkom";

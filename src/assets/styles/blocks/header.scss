@@ -21,7 +21,7 @@
   clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
     
   &_blog {
-    height: 600px;
+    min-height: 600px;
   }
 }
 
@@ -91,6 +91,7 @@
 .header__image {
   display: block;
   max-width: 180%;
+  height: 150%;
 }
 .header__portfolio {
   position: absolute;
