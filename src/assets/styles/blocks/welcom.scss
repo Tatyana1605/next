@@ -120,9 +120,14 @@
 
 .welcom_me_item_left {
   background-color: #06ac98;
+  height: 100%;
+  flex: 1;
+  opacity: 0.8;
   border-radius: 0 0 0 10px;
-  padding: 20px 32px 20px 33px;
-
+  // padding: 20px 32px 20px 33px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   
   &:hover {
     background-color: #058980;
@@ -132,9 +137,13 @@
 
 .welcom_me_item_centr {
   background-color: #06ac98;
-  
-  padding: 20px 32px 20px 31px;
-  
+  height: 100%;
+  flex: 1;
+  opacity: 0.8;
+  // padding: 20px 32px 20px 31px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   &:hover {
     background-color: #058980;
     cursor: pointer;
@@ -144,8 +153,13 @@
 .welcom_me_item_right {
   background-color: #06ac98;
   border-radius: 0 0 10px 0;
-  padding: 20px 32px;
-  
+  height: 100%;
+  flex: 1;
+  opacity: 0.8;
+  // padding: 20px 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   &:hover {
     background-color: #058980;
     cursor: pointer;
