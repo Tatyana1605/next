@@ -50,7 +50,7 @@
 .title::after, 
 .title::before {
   content: '';
-  position: absolute;
+  // position: absolute;
   display: inline-block;
   height: 6px;
   width: 20px;
@@ -59,10 +59,10 @@
 }
 
 
-.title::after {
-  right: -20px;
-}
-.title::before {
-  left: -20px;
-}
+// .title::after {
+//   right: -20px;
+// }
+// .title::before {
+//   left: -20px;
+// }
 

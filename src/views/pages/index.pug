@@ -1,6 +1,12 @@
 extends ../auth.layout.pug
 
 block content
+ .preloader
+  svg.preloader__icon(viewBox="0 0 144 144" width="144px" height="144px")
+      circle(opacity="0.3" fill="none" stroke="#fff" stroke-width="4" cx="72" cy="72" r="60").loader_outside
+      circle(opacity="0.6" fill="none" stroke="#fff" stroke-width="4" cx="72" cy="72" r="50").loader_middle
+      circle(opacity="1" fill="none" stroke="#fff" stroke-width="4" cx="72" cy="72" r="40").loader_inside
+      span.preloader__text
  .welcom
   .welcom__parallax
     //- .welcom__parallax_layer
@@ -27,49 +33,54 @@ block content
     .button
         a(href="#").welcom__buttom Авторизоваться
   .center
-    img(src="/assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
-    h1 Татьяна Пономарева
-    p Личный сайт веб разработчика
-    ul.socials
-          -var socials = ['vk', 'gh', 'in']
-          each item in socials
-            li.socials__item
-              a(href="#" class=`socials__link_${item}`).socials__link
-   
-
-    ul.welcom_me
-      li.welcom_me_item_left 
-        a(href="./works.html") мои работы
-      li.welcom_me_item_centr
-        a(href="./about.html") обо мне
-      li.welcom_me_item_right  
-        a(href="./blog.html") блог
+    .center__form
+      .center__info
+        img(src="/assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+        h1 Татьяна Пономарева
+        p Личный сайт веб разработчика
+        ul.socials
+              -var socials = ['vk', 'gh', 'in']
+              each item in socials
+                li.socials__item
+                  a(href="#" class=`socials__link_${item}`).socials__link
+        ul.welcom_me
+          li.welcom_me_item_left 
+            a(href="./works.html") мои работы
+          li.welcom_me_item_centr
+            a(href="./about.html") обо мне
+          li.welcom_me_item_right  
+            a(href="./blog.html") блог
+      .center__login
+        form(action="").form__lodin
+          .form__subtitle
+            .subtitle Авторизуйтесь
+          .form__row.form__row-log 
+            label(for="").form__block
+            input(maxlength="25" size="40" name="login" placeholder="Логин").form__input_login
+          .form__row.form__row-pas
+            label(for="").form__block
+            input(type="password" maxlength="25" size="40" name="password" placeholder="Пароль").form__input_login
+          .form__row
+            label(for="").form__chec
+              input(type="checkbox" name="checkbox" checked).form__input_chec
+              span.form__chec_text Я человек
+                span.form__btn_chec
+          .form__row_people 
+            .form__piople Вы точно не робот?
+            .form__yes
+              label(for="").form__radio
+                input(type="radio" name="radio").form__input_radio
+                span.form__radio_text Да
+                  span.form__btn
+              label(for="").form__radio
+                input(type="radio" name="radio").form__input_radio
+                span.form__radio_text Не уверен
+                  span.form__btn
+          .form__row
+            input(href="" type="submit" value="На главную").form__input_sub
+            input(type="submit" value="Войти").form__input_sub.form__input_sub_sub
   .bottom &copy;	Татьяна Пономарева | Созданно с любовью в LoftShool | 2018
-  .center__login
-    form(action="").form__lodin
-      .subtitle Авторизуйтесь
-      .form__row 
-        label(for="").form__block
-         input(maxlength="25" size="40" name="login" placeholder="Логин").form__input_login
-      .form__row
-        label(for="").form__block
-         input(type="password" maxlength="25" size="40" name="password" placeholder="Пароль").form__input_login
-      .form__row
-        label(for="").form__chec
-          input(type="checkbox" name="checkbox" checked).form__input_chec
-          span.form__chec_text Я человек
-            span.form__btn_chec
-      .form__row Вы точно не робот?
-        label(for="").form__radio
-          input(type="radio" name="radio").form__input_radio
-          span.form__radio_text Да
-            span.form__btn
-        label(for="").form__radio
-          input(type="radio" name="radio").form__input_radio
-          span.form__radio_text Не уверен
-            span.form__btn
-      .form__row
-        input(type="submit" value="На главную").form__input_sub
-        input(type="submit" value="Войти").form__input_sub.form__input_sub_sub
+  
+    
 
 

@@ -39,32 +39,47 @@ block content
     //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
     //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
     //-     polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
-    .blog__bottom
-      .blog__left
-        nav.nav__blog
-          ul.nav__item
-            li.nav__list 
-              a(href="#").nav__list_a Самое важное в SASS
-            li.nav__list
-              a(href="#").nav__list_a Приёмы в вёрстке, без которых  не обходится ни один сайт
-            li.nav__list 
-              a(href="#").nav__list_a Самый необходимый набор Gulp плагинов
-            li.nav__list
-              a(href="#").nav__list_a Почему я выбрал Jade
-      .blog__right
-        .blog__text
-          .blog__title Самое важное в SASS
-          .blog__data 22 августа 2019 года
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
-          img(src="./assets/images/bg/1.png", alt="").blog__img
-          hr(color="#f5f2f0", height="2px")
-        .blog__text
-          .blog__title Самое важное в SASS
-          .blog__data 22 августа 2019 года
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
+
+    .blog__left
+      article.nav__blog
+        ul.nav__item
+          li.nav__list 
+            button.nav__list_btn(type='button' data-index-button=article) Самое важное в SASS
+          li.nav__list
+            button.nav__list_btn(type='button' data-index-button=article) Приёмы в вёрстке, без которых  не обходится ни один сайт
+          li.nav__list 
+            button.nav__list_btn(type='button' data-index-button=article) Самый необходимый набор Gulp плагинов
+          li.nav__list
+            button.nav__list_btn(type='button' data-index-button=article) Почему я выбрал Jade
+    .blog__right
+      article.blog__text(data-article=article)
+        .blog__title Самое важное в SASS
+        .blog__data 22 августа 2019 года
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+        img(src="./assets/images/bg/1.png", alt="").blog__img
+        hr(color="#f5f2f0", height="2px")
+      article.blog__text(data-article=article)
+        .blog__title Самое важное в SASS
+        .blog__data 22 августа 2019 года
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
+        hr(color="#f5f2f0", height="2px")
+      article.blog__text(data-article=article)
+        .blog__title Самое важное в SASS
+        .blog__data 22 августа 2019 года
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
+        hr(color="#f5f2f0", height="2px")
+      article.blog__text(data-article=article)
+        .blog__title Самое важное в SASS
+        .blog__data 22 августа 2019 года
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
+      
 
 
   
