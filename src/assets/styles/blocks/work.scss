@@ -41,7 +41,7 @@
     left: 0;
     height: 1290px;
     width: 100%;
-    background: url('./assets/images/bg/5.png') center center no-repeat;
+    background: url('./assets/images/bg/5.png') center center / cover no-repeat;
     
     @include phone {
       height: 1355px;
@@ -135,7 +135,7 @@
 }
 
 .work__consol {
-  background: url('./assets/images/bg/5.png') center no-repeat;
+  background: url('./assets/images/bg/5.png') center center / cover no-repeat;
   filter: blur(20px);
   // background-size: cover;
   width: 100%;

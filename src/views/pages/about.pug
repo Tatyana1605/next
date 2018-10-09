@@ -28,15 +28,14 @@ block content
       .header__portfolio
         img(src="./assets/images/bg/header.png", alt="").portfolio__image
       .header__centr
-        .header__use
-          img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
-          h1 Татьяна Пономарева
-          p Личный сайт веб разработчика
+        img(src="./assets/images/bg/UvfEDDe549U.jpg", alt="фото" ).avatar
+        h1 Татьяна Пономарева
+        p Личный сайт веб разработчика
       .header__bottom
         .arrow-down
-          a(href="#").arrow-down_btn
+          a(href="#" data-target="#el").arrow-down_btn
       
-  section.about
+  section.about(id='el')
     //- .about__top
     //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
     //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_white

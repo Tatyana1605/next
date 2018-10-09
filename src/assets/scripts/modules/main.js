@@ -1,7 +1,7 @@
 var parallax = (function () {
   var bg = document.querySelector('.header__img');
-  var user = document.querySelector('.header__use');
-  var sectionText = document.querySelector('.portfolio__image');
+  var user = document.querySelector('.header__centr');
+  var sectionText = document.querySelector('.header__portfolio');
     return {
       move(block, windowScroll, strafeAmount) {
         var strafe = windowScroll / -strafeAmount + '%';
@@ -11,16 +11,16 @@ var parallax = (function () {
 
         style.transform = transformString;
         style.webkitTransform = transformString;
-
+        console.log("kfjgvkdfnjf");
       },
       init(wScroll) {
         this.move(bg, wScroll, 45);
-        this.move(sectionText, wScroll, 20);
+        this.move(sectionText, wScroll, 10);
         this.move(user, wScroll, 3);
         
       }
     }
-
+      
 }());
 
 var blur = (function () {

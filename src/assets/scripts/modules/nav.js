@@ -14,5 +14,15 @@ $(document).ready(function(){
   $('.nav__item').on('click', function(){
     $('.nav').removeClass('nav__activ');
   })
+
+  $('.arrow-down_btn').on('click', function(){
+    var target = $(this).data('target');
+    var pos = $(target).offset().top;
+    $('html, body').animate({'scrollTop': pos }, 1500);
+    
+  });
+
 });
+
+
 

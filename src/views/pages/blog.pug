@@ -33,8 +33,8 @@ block content
         p Статьи, которые я написала
       .header__bottom
         .arrow-down
-          a(href="#").arrow-down_btn
-  section.blog
+          a(href="#" data-target="#el").arrow-down_btn
+  section.blog(id='el')
     //- .blog__top
     //-   svg.triangles(viewBox="0 0 1200 108", preserveAspectRatio="xMinYMax")
     //-     polygon(points="0,0 0,108 601,108 601,105").triangle.triangle_fill_abswhite
@@ -42,15 +42,15 @@ block content
 
     .blog__left
       article.nav__blog
-        ul.nav__item
-          li.nav__list 
-            button.nav__list_btn(type='button' data-index-button=article) Самое важное в SASS
-          li.nav__list
-            button.nav__list_btn(type='button' data-index-button=article) Приёмы в вёрстке, без которых  не обходится ни один сайт
-          li.nav__list 
-            button.nav__list_btn(type='button' data-index-button=article) Самый необходимый набор Gulp плагинов
-          li.nav__list
-            button.nav__list_btn(type='button' data-index-button=article) Почему я выбрал Jade
+        ul.nav__list
+          li.nav__item 
+            button.nav__item_btn(type='button' data-index-button=article) Самое важное в SASS
+          li.nav__item
+            button.nav__item_btn(type='button' data-index-button=article) Приёмы в вёрстке, без которых  не обходится ни один сайт
+          li.nav__item 
+            button.nav__item_btn(type='button' data-index-button=article) Самый необходимый набор Gulp плагинов
+          li.nav__item
+            button.nav__item_btn(type='button' data-index-button=article) Почему я выбрал Jade
     .blog__right
       article.blog__text(data-article=article)
         .blog__title Самое важное в SASS

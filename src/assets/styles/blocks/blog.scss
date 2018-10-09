@@ -20,7 +20,7 @@
   // }
 }
 
-.nav__list{
+.nav__item{
   text-align: right;
   padding-bottom: 25px;
 }
@@ -31,9 +31,16 @@
 
   position: sticky;
   top: 0;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    width: 22%;
+  
+  }
 }
 
-.nav__list_btn {
+.nav__item_btn {
   background-color: transparent;
   text-align: right;
   
@@ -61,7 +68,7 @@
 // .nav__list_a {
 //   color: #373e42;
 // }
-.nav__list::after {
+.nav__item::after {
   content: '';
   display: inline-block;
   height: 45px;
