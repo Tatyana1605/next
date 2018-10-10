@@ -1,6 +1,9 @@
 .headercolor__about {
   
   background: linear-gradient(to right, #efeee9 50%, #eeebdf 50%);
+  @media (max-width: 992px){
+    background: linear-gradient(to right, #efeee9 50%, #efeee9 50%);
+  }
 }
 
 .headercolor__work {
@@ -23,6 +26,10 @@
   &_blog {
     min-height: 600px;
   }
+
+  @media (max-width: $tablets) {
+    clip-path: polygon(0% 0%, 0% 90%, 50% 100%, 100% 90%, 100% 0%);
+  }
 }
 
 
@@ -39,6 +46,9 @@
   left: 2%;
  &_blog {
    left: 15%;
+   @media (min-width: 480px) {
+
+   }
  }
 }
 
@@ -105,6 +115,14 @@
     &_blog {
       top: 70%;
     }
+
+    
+}
+
+.portfolio__image {
+  @media (min-width: $laptop) {
+    background-image: none;
+  }
 }
 
 .header__centr {

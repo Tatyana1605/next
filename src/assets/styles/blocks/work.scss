@@ -26,7 +26,10 @@
   align-items: center;
   flex: 1;
 
-  @include tablets {
+  @media (min-width: 768px) {
+    height: 1000px;
+  }
+  @media (min-width: 480px) {
     height: 1000px;
   }
 
@@ -43,9 +46,10 @@
     width: 100%;
     background: url('./assets/images/bg/5.png') center center / cover no-repeat;
     
-    @include phone {
-      height: 1355px;
+    @media (max-width: 768px) {
+      height: 1660px;
     }
+    
 }
 
 .work__about_title  {
@@ -64,16 +68,21 @@
   width: 60%;
   margin: auto;
   display: flex;
+  flex-direction: inherit;
   padding-bottom: 70px;
   
 
-  @include tablets {
-    width: 95%;
-  }
+    @media (max-width: 992px) {
+     width: 95%;
+     flex-direction: inherit;
 
-  @include phone {
-    flex-direction: column;
-  }
+     
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+       }
+    
 }
 
 .work__comment {
@@ -84,6 +93,10 @@
   // padding: 0 12px;
   display: flex;
   padding-top: 50px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 
   &:before {
     font-family: "FontAwesome";

@@ -100,91 +100,91 @@
 // }
 
 
-document.onscroll = function() {
-  var wScroll = window.pageYOffset;
-  // var hSection = document.querySelector(".headercolor__blog");
-  var sidebar = document.querySelector(".nav__blog");
-  if(wScroll > 1200 ) {
-    sidebar.classList.add("fixed");
-  }
-  else {
-    sidebar.classList.remove("fixed")
-  }
+// document.onscroll = function() {
+//   var wScroll = window.pageYOffset;
+//   // var hSection = document.querySelector(".headercolor__blog");
+//   var sidebar = document.querySelector(".nav__blog");
+//   if(wScroll > 1200 ) {
+//     sidebar.classList.add("fixed");
+//   }
+//   else {
+//     sidebar.classList.remove("fixed")
+//   }
   
-}
+// }
 
 
-import $ from 'jquery'
+// import $ from 'jquery'
 
 
-let scrollMenu = (function() {
-  const $news = $('.blog__text')
-  const $item = $('.nav__item')
-  let positionArticle = []
-  let flagAnimation = true
+// let scrollMenu = (function() {
+//   const $news = $('.blog__text')
+//   const $item = $('.nav__item')
+//   let positionArticle = []
+//   let flagAnimation = true
 
 
-  const _setPositionArticle = function(elements) {
-    elements.each(function(item) {
-      positionArticle[item] = {}
-      positionArticle[item].top = $(this).offset().top 
-      positionArticle[item].bottom =
-        positionArticle[item].top + $(this).innerHeight()
-    })
-  }
+//   const _setPositionArticle = function(elements) {
+//     elements.each(function(item) {
+//       positionArticle[item] = {}
+//       positionArticle[item].top = $(this).offset().top 
+//       positionArticle[item].bottom =
+//         positionArticle[item].top + $(this).innerHeight()
+//     })
+//   }
 
-  const _scrollPage = function() {
-    const isFirstVision = function(element, current) {
-      let scroll = window.pageYOffset
-      return (
-        scroll >= element.top &&
-        scroll < element.bottom &&
-        !current.hasClass('active')
-      )
-    }
-    positionArticle.forEach((element, index) => {
-      let $currentElement = $item.eq(index)
-      if (isFirstVision(element, $currentElement)) {
-        $currentElement
-          .addClass('active')
-          .siblings()
-          .removeClass('active')
-      }
-    })
-  }
+//   const _scrollPage = function() {
+//     const isFirstVision = function(element, current) {
+//       let scroll = window.pageYOffset
+//       return (
+//         scroll >= element.top &&
+//         scroll < element.bottom &&
+//         !current.hasClass('active')
+//       )
+//     }
+//     positionArticle.forEach((element, index) => {
+//       let $currentElement = $item.eq(index)
+//       if (isFirstVision(element, $currentElement)) {
+//         $currentElement
+//           .addClass('active')
+//           .siblings()
+//           .removeClass('active')
+//       }
+//     })
+//   }
 
-  const _clickMenu = function(e) {
-    if (flagAnimation) {
-      flagAnimation = false
-      let $element = $(e.target)
-      let index = $element.index()
-      let sectionOffset = Math.ceil(positionArticle[index].top)
-      $(document).off('scroll', _scrollPage)
-      $element.siblings().removeClass('active')
+//   const _clickMenu = function(e) {
+//     if (flagAnimation) {
+//       flagAnimation = false
+//       let $element = $(e.target)
+//       let index = $element.index()
+//       let sectionOffset = Math.ceil(positionArticle[index].top)
+//       $(document).off('scroll', _scrollPage)
+//       $element.siblings().removeClass('active')
 
-      $('body, html').animate({ scrollTop: sectionOffset }, 1000, () => {
-        $element.addClass('active')
-        $(document).on('scroll', _scrollPage)
-        flagAnimation = true
-      })
-    }
-  }
+//       $('body, html').animate({ scrollTop: sectionOffset }, 1000, () => {
+//         $element.addClass('active')
+//         $(document).on('scroll', _scrollPage)
+//         flagAnimation = true
+//       })
+//     }
+//   }
 
-  const addListener = function() {
-    $(window).on('load', function() {
-      _setPositionArticle($news)
-      $('.nav__list').on('click', _clickMenu)
-      $(document).on('scroll', _scrollPage)
-    })
+//   const addListener = function() {
+//     $(window).on('load', function() {
+//       _setPositionArticle($news)
+//       $('.nav__list').on('click', _clickMenu)
+//       $(document).on('scroll', _scrollPage)
+//     })
 
-    $(window).on('resize', function() {
-      _setPositionArticle($news)
-    })
-  }
+//     $(window).on('resize', function() {
+//       _setPositionArticle($news)
+//     })
+//   }
 
-  return {
-    init: addListener
-  }
-})()
+//   return {
+//     init: addListener
+//   }
+// })()
 
-scrollMenu.init()
+// scrollMenu.init()

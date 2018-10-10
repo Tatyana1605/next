@@ -9,20 +9,32 @@
   height: 865px;
   display: flex;
   flex: 1;
+
+  @media (max-width: 992px) {
+    
+    min-height: 1630px;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    min-height: 1800px;
+    height: 100%;
+  }
 }
 
-.about__top {
-  position: absolute;
-  margin-top: -150px;
-  width: 100%;
-}
-.triangle.triangle_fill_white {
-  fill: #efeee9;
-}
+// .about__top {
+//   position: absolute;
+//   margin-top: -150px;
+//   width: 100%;
+// }
+// .triangle.triangle_fill_white {
+//   fill: #efeee9;
+// }
 
-.triangle.triangle_fill_beige {
-  fill: #eeebdf;
-}
+// .triangle.triangle_fill_beige {
+//   fill: #eeebdf;
+// }
 
 .about__left {
   top: 0;
@@ -32,12 +44,15 @@
   background: #efeee9;
   display: flex;
   align-items: end;
+  overflow: hidden;
 
-  // @include desktop {
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-  
+  @media (max-width: 1800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .about__triangle {
@@ -50,23 +65,34 @@
  height: 100%;
  padding-top: 45px;
  text-align: center;
-  // @include desktop  {
-  //    width: 100%;
-  // }
+ @media (max-width: 1800px)  {
+     width: 80%;
+     padding-top: 65px;
+     margin-top: -35px;
+     background-position: center;
+  }
 }
 .about__desc {
  width: 55%;
  padding: 10px;
-  //  @include desktop  {
-  //    width: 100%;
-  //    text-align: center;
-  // }
+    @media (max-width: 1800px)  {
+     width: 80%;
+     text-align: center;
+     padding-top: -40px;
+  }
 }
 .user-desc__title {
   text-align: center;
   margin-bottom: 30px;
 
 }
+.user-desc__text {
+
+  @media (max-width: 1800px) {
+    text-align: left;
+  }
+}
+
 
 
 .about__right {
@@ -77,6 +103,12 @@
   position: relative;
   background: #eeebdf;
   padding: 10px;
+  @media (max-width: 992px) {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
 }
 
 .about__right_title {
@@ -84,6 +116,8 @@
 }
 .about__info {
   height: 80%;
+  
+  
 }
 
 .skills {
@@ -110,7 +144,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background: url('../assets/images/bg/map.png') center center / cover no-repeat
+  // background: url('../assets/images/bg/map.png') center center / cover no-repeat
 }
 
 .contacts__conteiner {
@@ -127,6 +161,15 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   
+  @media (max-width: 768px) {
+    top: 0;
+    left: 0;
+    display: block;
+    transform: none;
+    width: 100%;
+    opacity: 0.9;
+  }
+    
 
 }
 

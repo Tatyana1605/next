@@ -76,7 +76,7 @@
   justify-content: flex-end;
   padding-top: 25px;
   
-  @include phone {
+ @media (max-width: 768px ) {
     padding-top: 10px;
     padding-right: 0;
     justify-content: center;
@@ -177,8 +177,8 @@
   margin: 40px auto 20px;
    &.norm{
      border-radius: 0;
-     height: 390px;
-     width: 440px;
+     height: 400px;
+     width: 435px;
    }
 }
 
