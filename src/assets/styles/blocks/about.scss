@@ -137,7 +137,19 @@
   font-weight: bold;
 }
 
+.map {
+  height: calc(100vh - 150px);
 
+  @media (max-width: 992px) {
+    height: calc(100vh - 235px);
+    
+  }
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 260px);
+    
+  }
+}
 .contacts {
   position: relative;
   top: 0;
@@ -174,7 +186,7 @@
 }
 
 .user-data__title {
-  margin: 30px auto;
+  margin: 16px auto;
   text-align: center;
 }
 
