@@ -102,7 +102,7 @@
 
 document.onscroll = function() {
   var wScroll = window.pageYOffset;
-  var sidebar = document.querySelector(".nav__blog");
+  var sidebar = document.querySelector(".aside__blog");
   
   if(wScroll > 1200 ) {
     sidebar.classList.add("fixed");
@@ -118,7 +118,7 @@ import $ from 'jquery'
 
 let scrollMenu = (function() {
   const $news = $('.article')
-  const $item = $('.nav__items')
+  const $item = $('.aside__item')
   let positionArticle = []
   let flagAnimation = true
 
@@ -173,7 +173,7 @@ let scrollMenu = (function() {
   const addListener = function() {
     $(window).on('load', function() {
       _setPositionArticle($news)
-      $('.nav__list').on('click', _clickMenu)
+      $('.aside__list').on('click', _clickMenu)
       $(document).on('scroll', _scrollPage)
     })
 
@@ -188,3 +188,18 @@ let scrollMenu = (function() {
 })()
 
 scrollMenu.init()
+
+
+$(document).ready(function() {
+  $('.aside__blog-button').on('click', function(e) {
+    e.preventDefault();
+    $('.aside__blog').addClass('aside__blog_active');
+  });
+
+  $('.aside__item').on('click', function(e){
+    e.preventDefault();
+    $('.aside__blog').removeClass('aside__blog_active');
+  })
+
+})
+

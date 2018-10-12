@@ -41,16 +41,17 @@ block content
     //-     polygon(points="1200,0 1200,108 599,108 599,105").triangle.triangle_fill_abswhite
 
     .blog__left
-      aside.nav__blog
-        ul.nav__list
-          li.nav__items 
-            button.nav__item_btn(type='button' data-index-button=article) Самое важное в SASS
-          li.nav__items
-            button.nav__item_btn(type='button' data-index-button=article) Приёмы в вёрстке, без которых  не обходится ни один сайт
-          li.nav__items 
-            button.nav__item_btn(type='button' data-index-button=article) Самый необходимый набор Gulp плагинов
-          li.nav__items
-            button.nav__item_btn(type='button' data-index-button=article) Почему я выбрал Jade
+      aside.aside__blog
+        button.aside__blog-button
+        ul.aside__list
+          li.aside__item Самое важное в SASS
+            //- button.aside__item_btn Самое важное в SASS
+          li.aside__item Приёмы в вёрстке, без которых  не обходится ни один сайт
+            //- button.aside__item_btn Приёмы в вёрстке, без которых  не обходится ни один сайт
+          li.aside__item Самый необходимый набор Gulp плагинов
+            //- button.aside__item_btn Самый необходимый набор Gulp плагинов
+          li.aside__item Почему я выбрал Jade
+            //- button.aside__item_btn Почему я выбрал Jade
     .blog__right
       .article
         .blog__title Самое важное в SASS
@@ -58,21 +59,24 @@ block content
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
         img(src="./assets/images/bg/1.png", alt="").blog__img
-        hr(color="#f5f2f0", height="3px")
+      hr(color="#f5f2f0", height="3px")
       .article
         .blog__title Самое важное в SASS
         .blog__data 22 августа 2019 года
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
-        hr(color="#f5f2f0", height="3px")
+      hr(color="#f5f2f0", height="3px")
       .article
         .blog__title Самое важное в SASS
         .blog__data 22 августа 2019 года
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repudiandae fugit enim! Nobis, odit amet inventore ducimus necessitatibus distinctio similique. Sit ducimus alias unde ab provident consequuntur voluptatibus autem nam.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat minus modi impedit necessitatibus ipsam saepe ea nihil omnis? Veniam quam molestiae aliquam commodi deleniti sint asperiores minus explicabo consequatur.
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fugiat excepturi maxime eum dolorem consequatur neque animi facilis? Reiciendis saepe repudiandae voluptatibus dolorem architecto, tempore atque nostrum perspiciatis distinctio illo.
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi earum, perferendis blanditiis obcaecati inventore sunt mollitia libero eum totam assumenda id soluta cumque veniam repellendus maxime rerum alias est?
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum modi nam fuga impedit quod magnam natus eveniet, dignissimos quidem omnis ratione asperiores alias rem aliquid, laborum ut cumque mollitia voluptas!
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut quas eaque asperiores ad, eveniet commodi dolores nulla neque voluptatem, magnam sapiente repellendus at modi voluptas accusantium dicta vero odio.
-        hr(color="#f5f2f0", height="3px")
+      hr(color="#f5f2f0", height="3px")
       .article
         .blog__title Самое важное в SASS
         .blog__data 22 августа 2019 года
