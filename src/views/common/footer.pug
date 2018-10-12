@@ -3,16 +3,22 @@ footer.footer
       .footer__col
         nav.menu
           ul.menu__list 
-            each item in [['Мои работы', ['./works.html']],['Обо мне', ['./about.html']], ['Блог', ['./blog.html']], ['Авторизация', [ ]]]
-              li.menu__item
-                a(href="#{item[1]}").menu__link #{item[0]}
+            li.menu__item
+              a(href="./works.html").menu__link Мои работы
+            li.menu__item
+              a(href="./blog.html").menu__link Блог
+            li.menu__item
+              a(href="./about.html").menu__link Обо мне
+            li.menu__item
+              a(href="./index.html").menu__link Авторизация
+            
       .footer__col.footer__col_right
         ul.socials
           -var socials = ['vk', 'gh', 'in']
           each item in socials
             li.socials__item
               a(href="" class=`socials__link_footer_${item}`).social__link.social__link_footer
-  hr(color="#949799")
+  hr(color="#949799" width="100%")
   .footer__row
     .footer__col
       .copyright
