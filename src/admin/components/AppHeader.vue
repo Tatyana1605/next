@@ -1,12 +1,12 @@
 <template lang="pug">
-  app-header
+  div
     h1.title Панель администрирования
     a(href="#").button_welcom Вернуться на сайт
 </template>
 
 
 <style lang="scss" scoped>
-  app-header {
+  div {
     width: 100%;
     height: 80px;
     background-color: #00bfa5;

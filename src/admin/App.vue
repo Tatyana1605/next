@@ -3,7 +3,7 @@
     .header
       app-header
     .tabs
-      tabs
+      app-tabs
     .content
       skills(
         :skills="skills"
@@ -12,8 +12,8 @@
 
 <script>
 
-import header from "./components/header";
-import tabs from "./components/tabs";
+import AppHeader from "./components/AppHeader";
+import AppTabs from "./components/AppTabs";
 import skills from "./components/skills";
 import { mapActions, mapState} from "vuex";
 
@@ -31,8 +31,8 @@ const data = [
 
 export default {
   components: {
-    appHeader: header,
-    tabs,
+    AppHeader,
+    AppTabs,
     skills
     // appTitle: require("./components/title").default
   },
