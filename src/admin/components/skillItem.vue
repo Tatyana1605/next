@@ -1,9 +1,9 @@
 <template lang="pug">
 tr(v-if="editmode === false")
   td {{skill.title}}
-  td {{skill.percent}} %
+  td {{skill.percents}} %
   td 
-    button(type="button") Удалить
+    button(type="button" @click="removeSkill(skill.id)") Удалить
 
 tr(v-else)
   td  
@@ -50,13 +50,14 @@ export default {
       newSkill: {
         title: "",
         percents: 0,
-        category: this.type 
+        category: this.typeId 
       }
     }
   },
   methods: {
     ...mapActions({
-      addNewSkill: 'skills/add'
+      addNewSkill: 'skills/add',
+      removeSkill: 'skills/remove'
     })
   }
 }

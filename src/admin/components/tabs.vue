@@ -1,30 +1,29 @@
 <template lang="pug">
-  .tabs
-    tabs
-      input(id="tab_1" type="radio" name="tab" checked="checked")
-      input(id="tab_2" type="radio" name="tab" )
-      input(id="tab_3" type="radio" name="tab" )
+.tabs
+  tabs
+    input(id="tab_1" type="radio" name="tab" checked="checked")
+    input(id="tab_2" type="radio" name="tab" )
+    input(id="tab_3" type="radio" name="tab" )
 
-      label(for="tab_1" id="tab_l1") Обо мне 
-      label(for="tab_2" id="tab_l2") Блог 
-      label(for="tab_3" id="tab_l3") Мои работы
+    label(for="tab_1" id="tab_l1") Обо мне 
+    label(for="tab_2" id="tab_l2") Блог 
+    label(for="tab_3" id="tab_l3") Мои работы
 
-      .line(style="clear:both")
+    .line(style="clear:both")
 	
-      .tabs_cont
-        .text(id="tab_c1") 
-        .text(id="tab_c2") 
-        .text(id="tab_c3") 
-	
+    .tabs_cont
+      .text(id="tab_c1") 
+      .text(id="tab_c2") 
+      .text(id="tab_c3") 
 
-      
-        
+	
 </template>
+
 
 <style lang="scss" scoped>
 
 
-  .tabs {
+.tabs {
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
@@ -60,12 +59,12 @@
 	z-index: 3;
 }
 
-// .tabs_cont {
+/* // .tabs_cont {
 // 	background: #fff;
 // 	position: relative;
 // 	z-index: 2;
 // 	height: 230px;
-// }
+// } */
 
 .tabs_cont > div {
 	position: absolute;

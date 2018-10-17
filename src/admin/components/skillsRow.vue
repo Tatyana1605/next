@@ -10,7 +10,7 @@
       )
       skill-item(
         :editmode="true"
-        typeId="type.id"
+        :typeId="type.id"
       )
     hr
     br

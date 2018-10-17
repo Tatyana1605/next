@@ -1,5 +1,6 @@
 <template lang="pug">
   #tab_c1
+    app-form
     h1 Страница обо мне
     skills-row(
       v-for="type in types"
@@ -12,10 +13,13 @@
 
 <script>
 import skillsRow from './skillsRow';
+import form from './form';
+
 export default {
   
   components: {
-    skillsRow
+    skillsRow,
+    appForm: form
   },
   props: {
     skills: {
