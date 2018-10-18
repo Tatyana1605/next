@@ -5,12 +5,19 @@ import axios from "axios";
 
 Vue.use(VueRouter);
 
+const routers = [
+  { path: '', component: require('./components/skills')},
+  { path: 'blog', component: require('./components/blog/blog')},
+  { path: 'work', component: require('./components/work/work')}
+
+];
+
 const guard = axios.create({
   baseURL: "https://webdev-api.loftschool.com"
 });
 
 
-const routers = [];
+
 
 const router = new VueRouter({ routers });
 

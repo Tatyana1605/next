@@ -36,8 +36,8 @@ export default {
 	data: () => ({
 		tabs: [
 			{name: "Обо мне", router: '/'},
-			{name: "Блог", router: '/'},
-			{name: "Мои работы", router: '/'}
+			{name: "Блог", router: '/blog'},
+			{name: "Мои работы", router: '/work'}
 		]
 	})
 }
@@ -57,6 +57,7 @@ ul {
 	width: 100%;
   height: 65px;
   background-color: #f0efe9;
+	
 }
 .tabs__item {
 	color: #555;
@@ -73,13 +74,19 @@ ul {
 	left: -50px;
 
 	&:active,
-	&:hover  {
+	&:checked,
+	&:hover {
 		background-color: #ffffff;
 		color:  #0f9c89;
 		z-index: 3;
+		
 	}
 }
-
+.router-link-exact-active {
+	background-color: #ffffff;
+		color:  #0f9c89;
+		z-index: 3;
+}
 // .tabs input {
 // 	position: absolute;
 // 	left: -9999px;

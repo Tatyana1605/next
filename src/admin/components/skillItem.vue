@@ -1,7 +1,7 @@
 <template lang="pug">
 tr(v-if="editmode === false")
   td {{skill.title}}
-  td {{skill.percents}} %
+  td {{skill.percent}} %
   td 
     button(type="button" @click="removeSkill(skill.id)") Удалить
 

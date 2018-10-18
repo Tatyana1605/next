@@ -1,13 +1,14 @@
 <template lang="pug">
-  #tab_c1
+  skills
     app-form
     h1 Страница обо мне
-    skills-row(
-      v-for="type in types"
-      :key="type.id"
-      :type="type"
-      :skills="skills"
-    )
+    .content
+      skills-row(
+        v-for="type in types"
+        :key="type.id"
+        :type="type"
+        :skills="skills"
+      )
 </template>
 
 
@@ -54,4 +55,16 @@ export default {
     
 //     // opacity: 0.15;
 //  }
+
+.content {
+  display: flex;
+justify-content: center;
+
+flex-flow: row wrap;
+
+}
+.skills { 
+  flex: 1 1 500px;
+}
+
 </style>

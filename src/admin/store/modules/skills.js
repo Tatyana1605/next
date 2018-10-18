@@ -15,7 +15,7 @@ const skills = {
 
   actions: {
     fetch({commit}) {
-      this.$axios.get("/skills/2").then(response => {
+      this.$axios.get('/skills/2').then(response => {
         commit('loadSkills', response.data)
       }, 
       error =>{
@@ -24,7 +24,7 @@ const skills = {
       );
     },
     add({commit}, skill) {
-      this.$axios.post("/skills", skill).then(
+      this.$axios.post('/skills', skill).then(
         response => {
           commit('addNewSkill', response.data)
       },

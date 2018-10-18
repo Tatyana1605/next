@@ -12,9 +12,7 @@
         :editmode="true"
         :typeId="type.id"
       )
-    hr
-    br
-    hr
+    
 </template>
 
 
@@ -39,3 +37,13 @@ export default {
   }
 }
 </script>
+
+
+<style lang="scss" scoped>
+.skills-title {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 15px 0;
+
+}
+</style>
