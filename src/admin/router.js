@@ -1,14 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import axios from "axios";
-
+import about from './components/about';
+import blog from './components/blog/blog';
+import work from './components/work/work';
 
 Vue.use(VueRouter);
 
-const routers = [
-  { path: '', component: require('./components/skills')},
-  { path: 'blog', component: require('./components/blog/blog')},
-  { path: 'work', component: require('./components/work/work')}
+const routes = [
+  { path: '/', name: 'about', component: about },
+  { path: '/blog', name: 'blog', component: blog },
+  { path: '/work', name: 'work', component: work }
 
 ];
 
@@ -19,7 +21,7 @@ const guard = axios.create({
 
 
 
-const router = new VueRouter({ routers });
+const router = new VueRouter({ routes });
 
 router.beforeEach((to, from, next) => {
   guard.get('/user', {

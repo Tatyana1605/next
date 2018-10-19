@@ -1,14 +1,15 @@
 <template lang="pug">
-  blog
+  .content
     h1 Страница "Блог"
-    .content
+    .contents
       form(method="post")
         h3 Добавить запись
-        input(type="text" placeholder="Название")
-        input(type="date" placeholder="Дата")
+        input(type="text" placeholder="Название").input__name
+        input(type="date" placeholder="Дата").input__name
         textarea(type="text" name="comment")
-        input(type="submit" value="Добавить")
+        input(type="submit" value="Добавить").input__add
       .conteiner__form
+        h3 Последнии записи
         table
           tr 
             th Название 
@@ -40,8 +41,49 @@
 
 
 <style lang="scss" scoped>
+
 .content {
+  padding-left: 30px;
+  width: 90%;
+}
+.contents {
   display: flex;
-  align-items: center;
+  align-items: end;
+  flex: 1;
+  
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+input, textarea {
+  margin-top: 20px;
+
+}
+.input__name {
+  height: 45px;
+  width: 300px;
+  border-radius: 3px;
+  border: none;
+  padding-left: 20px;
+}
+
+textarea {
+  height: 180px;
+  width: 500px;
+  overflow: auto;
+  border: none;
+  resize: none;
+}
+
+.input__add {
+  height: 45px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #00bfa5;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 </style>

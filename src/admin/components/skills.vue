@@ -1,8 +1,9 @@
 <template lang="pug">
+.content
   skills
     app-form
     h1 Страница обо мне
-    .content
+    .contents
       skills-row(
         v-for="type in types"
         :key="type.id"
@@ -15,6 +16,9 @@
 <script>
 import skillsRow from './skillsRow';
 import form from './form';
+
+
+
 
 export default {
   
@@ -57,14 +61,19 @@ export default {
 //  }
 
 .content {
+  padding-left: 30px;
+  width: 90%;
+}
+
+.contents {
   display: flex;
-justify-content: center;
+  justify-content: center;
 
-flex-flow: row wrap;
-
+  flex-flow: row wrap;
+  
 }
 .skills { 
-  flex: 1 1 500px;
+  flex: 1 1 650px;
 }
 
 </style>
