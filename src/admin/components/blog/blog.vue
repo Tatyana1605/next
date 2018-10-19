@@ -11,26 +11,26 @@
       .conteiner__form
         h3 Последнии записи
         table
-          tr 
+          tr.tr__header 
             th Название 
             th Дата
             th Содержание
             th
-          tr
+          tr.tr__color_beige
             td Мой первый сайт
             td 25.07.2018г
             td Сайт авиакомпании
             td 
               button.button_rename редактирование
               button.button_delet удалить
-          tr
+          tr.tr__color
             td Мой второй сайт
             td 25.08.2018г
             td Сайт бургер
             td 
               button.button_rename редактирование
               button.button_delet удалить
-          tr
+          tr.tr__color_beige
             td Мой третий сайт
             td 10.10.2018г
             td Сайт-визитка
@@ -85,5 +85,27 @@ textarea {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+table {
+  font-size: 16px;
+  height: 450px;
+  width: 530px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.tr__header {
+  height: 56px;
+  border-bottom-color: 3px solid #00bfa5;
+  
+}
+.tr__color {
+ 
+  height: 95px;
+  &_beige {
+    background-color: #f9f9f9;
+    height: 95px;
+  }
 }
 </style>
