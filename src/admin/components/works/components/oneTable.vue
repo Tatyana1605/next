@@ -3,11 +3,22 @@
   h3 Последнии работы
   table
     tr.tr__header 
-      th Название 
-      th Технология
-      th Ссылка
-      th Превью
-      th
+      td Название 
+      td Технология
+      td Ссылка
+      td Превью
+      td
+    //- tr(v-for='work in works')
+    //-   td {{work.title}}
+    //-   td {{work.techs}}
+    //-   td {{work.link}}
+    //-   td 
+    //-     img(src='`https://webdev-api.loftschool.com/${work.photo}`', width="100", height="100") 
+    //-   td
+    //-     button(type="button") удалить
+    //-     button(type="button") изменит
+
+    
     
     tr.tr__color_beige
       td Сайт школы онлайн образования
@@ -16,8 +27,8 @@
       td 
         img(src="../../../img/work-1.png").img__sait
       td 
-        button.button_rename редактирование
-        button.button_delet удалить
+        button(type="button").button_rename редактирование
+        button(type="button").button_delet удалить
     tr.tr__color
       td Сайт школы онлайн образования
       td HTML, CSS, JAVASCRIPT

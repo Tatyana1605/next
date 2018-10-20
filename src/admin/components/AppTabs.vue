@@ -37,7 +37,7 @@ export default {
 		tabs: [
 			{name: "Обо мне", router: '/'},
 			{name: "Блог", router: '/blog'},
-			{name: "Мои работы", router: '/work'}
+			{name: "Мои работы", router: '/works'}
 		]
 	})
 }

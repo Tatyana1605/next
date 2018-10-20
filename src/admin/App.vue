@@ -16,7 +16,7 @@ import AppHeader from "./components/AppHeader";
 import AppTabs from "./components/AppTabs";
 import abouts from "./components/about";
 import blog from "./components/blog/blog";
-import work from "./components/work/work";
+import works from "./components/works/works";
 
 
 export default {
@@ -25,7 +25,7 @@ export default {
     AppTabs,
     abouts,
     blog,
-    work
+    works
     // appTitle: require("./components/title").default
   },
 
