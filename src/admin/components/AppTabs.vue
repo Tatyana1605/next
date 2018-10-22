@@ -36,7 +36,7 @@ export default {
 	data: () => ({
 		tabs: [
 			{name: "Обо мне", router: '/'},
-			{name: "Блог", router: '/blog'},
+			{name: "Блог", router: '/posts'},
 			{name: "Мои работы", router: '/works'}
 		]
 	})

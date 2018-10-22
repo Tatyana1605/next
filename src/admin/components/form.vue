@@ -24,7 +24,7 @@ export default {
 
   methods: {
     sendData() {
-      axios.post('https://webdev-api.loftschool.com/', this.user).then(response => {
+      axios.post('https://webdev-api.loftschool.com/login', this.user).then(response => {
         if (response.status === 200) {
           const ttl = Math.floor(Date.now() / 1000 + response.data.ttl)
 

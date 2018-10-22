@@ -25,40 +25,40 @@
             td {{work.techs}}
             td {{work.link}}
             td 
-              img(src='`https://webdev-api.loftschool.com/${work.photo}`', width="100", height="100") 
+              img(:src='`https://webdev-api.loftschool.com/${work.photo}`', width="100", height="100") 
             td
               button(type="button" @click="removeWork(work.id)" ) удалить
               button(type="button" @click="fillUpFormWithData(work)") изменит
 
           
           
-          //- tr.tr__color_beige
-          //-   td Сайт школы онлайн образования
-          //-   td HTML, CSS, JAVASCRIPT
-          //-   td https://www.google.ru/
-          //-   td 
-          //-     img(src="../../img/work-1.png").img__sait
-          //-   td 
-          //-     button(type="button" @click="fillUpFormWithData(work)").button_rename редактирование
-          //-     button(type="button" @click="removeWork(work.id)").button_delet удалить
-          //- tr.tr__color
-          //-   td Сайт школы онлайн образования
-          //-   td HTML, CSS, JAVASCRIPT
-          //-   td https://www.google.ru/
-          //-   td 
-          //-     img(src="../../img/work-1.png").img__sait
-          //-   td 
-          //-     button(type="button" ).button_rename редактирование
-          //-     button(type="button" @click="removeWork(work.id)").button_delet удалить
-          //- tr.tr__color_beige
-          //-   td Сайт школы онлайн образования
-          //-   td HTML, CSS, JAVASCRIPT
-          //-   td https://www.google.ru/
-          //-   td 
-          //-     img(src="../../img/work-1.png").img__sait
-          //-   td 
-          //-     button(type="button" ).button_rename редактирование
-          //-     button(type="button" @click="removeWork(work.id)").button_delet удалить
+          tr.tr__color_beige
+            td Сайт школы онлайн образования
+            td HTML, CSS, JAVASCRIPT
+            td https://www.google.ru/
+            td 
+              img(src="../../img/work-1.png").img__sait
+            td 
+              button(type="button" @click="fillUpFormWithData(work)").button_rename редактирование
+              button(type="button" @click="removeWork(work.id)").button_delet удалить
+          tr.tr__color
+            td Сайт школы онлайн образования
+            td HTML, CSS, JAVASCRIPT
+            td https://www.google.ru/
+            td 
+              img(src="../../img/work-1.png").img__sait
+            td 
+              button(type="button" @click="fillUpFormWithData(work)" ).button_rename редактирование
+              button(type="button" @click="removeWork(work.id)").button_delet удалить
+          tr.tr__color_beige
+            td Сайт школы онлайн образования
+            td HTML, CSS, JAVASCRIPT
+            td https://www.google.ru/
+            td 
+              img(src="../../img/work-1.png").img__sait
+            td 
+              button(type="button" ).button_rename редактирование
+              button(type="button" @click="removeWork(work.id)").button_delet удалить
 </template>
 
 <script>
@@ -99,14 +99,16 @@ export default {
       editWork: "works/edit"
     }),
 
-    // editExistedWork(work) {
-    //   this.editWork(work).then(response => {
-    //     Object.keys(this.work).forEach(key => (this.work[key] = ""));
-    //     this.editmode = false;
-    //   }).catch(error => {
-    //     alert(error);
-    //   })
-    // },
+    editExistedWork(work) {
+      this.editWork(work).then(response => {
+        console.log(response);
+        Object.keys(this.work).forEach(key => (this.work[key] = ""));
+        this.editmode = false;
+      }).catch(error => {
+        alert(error);
+      })
+    
+    },
 
     fillUpFormWithData(work) {
       this.work.id = work.id;
@@ -215,6 +217,8 @@ table {
 .tr__header {
   height: 56px;
   border-bottom-color: 3px solid #00bfa5;
+  // display: flex;
+  // justify-content: space-around;
   
 }
 .tr__color {

@@ -6,7 +6,7 @@ const works = {
     data: []
   },
   mutations: {
-    fillUpWorksData: (state, work) => (state.data = work),
+    fillUpWorksData: (state, works) => (state.data = works),
     addNewWork: (state, work) => state.data.push(work),
     removeWork: (state, deleteWorkId) => state.data = state.data.filter(work => work.id !== deleteWorkId),
     editWork: (state, editedWork) => state.data = state.data.map(work => {

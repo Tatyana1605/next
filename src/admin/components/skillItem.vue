@@ -1,7 +1,7 @@
 <template lang="pug">
   tr(v-if="editmode === false")
     td {{skill.title}}
-    td.numder__percent {{skill.percent}}
+    td.numder__percents {{skill.percents}}
     td %
     td 
       button(type="button" @click="removeSkill(skill.id)") Удалить
@@ -50,7 +50,7 @@ export default {
     return {
       newSkill: {
         title: "",
-        percent: 0,
+        percents: 0,
         category: this.typeId 
       }
     }

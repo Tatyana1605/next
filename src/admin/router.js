@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import axios from "axios";
 import about from './components/about';
-import blog from './components/blog/blog';
+import posts from './components/posts/posts';
 import works from './components/works/works';
 
 Vue.use(VueRouter);
@@ -13,7 +13,7 @@ const guard = axios.create({
 
 const routes = [
   { path: '/', name: 'about', component: about },
-  { path: '/blog', name: 'blog', component: blog },
+  { path: '/posts', name: 'posts', component: posts },
   { path: '/works', name: 'works', component: works }
 
 ];
