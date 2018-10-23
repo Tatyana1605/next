@@ -15,10 +15,12 @@ block content
       .header__top
         .header__top_left
           ul.socials
-            -var socials = ['vk', 'gh', 'in']
-            each item in socials
-              li.socials__item
-                a(href="#" class=`socials__link_white_${item}`).socials__link.socials__link_white
+            li.socials__item
+              a(href="https://vk.com/id337442903" ).socials__link.socials__link_white_vk
+            li.socials__item
+              a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_white_gh
+            li.socials__item
+              a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_white_in
             
         .header__top_right
           a(href="#").btn__nav
@@ -83,20 +85,20 @@ block content
             .work__comment_name Ковальчук Дмитрий
             .work__comment_works Основатель школы LoftSchool
     .work__form
-      form(action="").form
+      form.form_work(method="post")
         .work__consol
         .work__form-centr
           .work__blur
             .subtitle Связаться со мной
             .form__row
               label(for="").form__block
-                input(type="text" placeholder="Имя" required).form__input
+                input(aria-label="Введите имя" type="text" name="name" placeholder="Имя" required).form__input
             .form__row
               label(for="").form__block
-                input(type="email" placeholder="Email" required).form__input
+                input(aria-label="Введите email" type="email" name="email" placeholder="Email" required).form__input
             .form__row
               label(for="").form__block
-                textarea(name="comment", cols="30", rows="10" placeholder="Ваше сообщение" required).form__textarea
+                textarea( aria-label="Введите сообщение" name="message" placeholder="Ваше сообщение" cols="30" rows="10" required).form__textarea
             .form__row
               input(type="submit" value="Отправить").form__input_buttom
               input(type="reset" value="Очистить").form__input_buttom.form__input_buttom_clear

@@ -39,10 +39,12 @@ block content
         h1 Татьяна Пономарева
         p Личный сайт веб разработчика
         ul.socials
-              -var socials = ['vk', 'gh', 'in']
-              each item in socials
-                li.socials__item
-                  a(href="#" class=`socials__link_${item}`).socials__link
+          li.socials__item
+            a(href="https://vk.com/id337442903" ).socials__link.socials__link_vk
+          li.socials__item
+            a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_gh
+          li.socials__item
+            a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_in
         ul.welcom_me
           li.welcom_me_item_left 
             a(href="./works.html") мои работы
@@ -51,34 +53,45 @@ block content
           li.welcom_me_item_right  
             a(href="./blog.html") блог
       .center__login
-        form(action="").form__lodin
+        form.form#form(action="https://webdev-api.loftschool.com/login" method="POST" novalidate)
           .form__subtitle
             .subtitle Авторизуйтесь
-          .form__row.form__row-log 
-            label(for="").form__block
-            input(maxlength="25" size="40" name="login" placeholder="Логин").form__input_login
-          .form__row.form__row-pas
-            label(for="").form__block
-            input(type="password" maxlength="25" size="40" name="password" placeholder="Пароль").form__input_login
           .form__row
-            label(for="").form__chec
-              input(type="checkbox" name="checkbox" checked).form__input_chec
-              span.form__chec_text Я человек
-                span.form__btn_chec
-          .form__row_people 
-            .form__piople Вы точно не робот?
-            .form__yes
-              label(for="").form__radio
-                input(type="radio" name="radio").form__input_radio
-                span.form__radio_text Да
-                  span.form__btn
-              label(for="").form__radio
-                input(type="radio" name="radio").form__input_radio
-                span.form__radio_text Не уверен
-                  span.form__btn
+            label.form__input-label
+              span.form__input-icon
+                +icon('login', 'form__input-icon__login')
+              input.form__input(aria-label="Введите логин" type="text", name="name", placeholder="Логин")
+              .form__error
           .form__row
-            input(href="" type="submit" value="На главную").form__input_sub
-            input(type="submit" value="Войти").form__input_sub.form__input_sub_sub
+            label.form__input-label
+              span.form__input-icon
+                +icon('password', 'form__input-icon__password')
+              input.form__input(aria-label="Введите пароль" type="password", name="password", placeholder="Пароль")
+              .form__error
+          .form__row
+            label.form__label
+              input.form__checkbox(type="checkbox", name="checkCaptcha" value="не робот")
+              span.form__checkbox-custom
+                +icon('check', 'form__checkbox-icon')
+              span.form__label-text Я человек
+              .form__error
+          .form__row
+            .form__row-title Вы точно не робот?
+            label.form__label.form__label--radio
+              input.form__radio(type="radio" name="radioCaptcha" value="yes")
+              span.form__radio-custom
+              span.form__label-text Да
+            label.form__label.form__label--radio
+              input.form__radio(type="radio" name="radioCaptcha" value="no" checked)
+              span.form__radio-custom
+              span.form__label-text Не уверен
+            .form__error
+          .form__row
+            .form__list
+              input.form__button.js-main-btn(type="button" href="") На главную
+              input.form__submit(type="submit" value="Войти")
+
+        
   .bottom &copy;	Татьяна Пономарева | Созданно с любовью в LoftShool | 2018
   
     

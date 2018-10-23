@@ -8,10 +8,13 @@ $(document).ready(function(){
 
   });
 
-  $('.form__input_sub').on('click', function(e){
+  $('.form__button').on('click', function(e){
     e.preventDefault();
     $('.center__form').removeClass('center__form-activ');
   });
+
+    
+
 
   // $('.nav__item').on('click', function(e){
   //   $('.nav').removeClass('nav__activ');
@@ -27,7 +30,7 @@ $(document).ready(function(){
  
   const initialX = (window.innerWidth / 2) - e.pageX;
   const initialY = (window.innerHeight / 2) - e.pageY;
-  console.log(initialX, initialY);
+  // console.log(initialX, initialY);
 
   layers.forEach((layer, i) => {
     const divider = i / 100;
@@ -46,3 +49,8 @@ $(document).ready(function(){
  }
 
  window.addEventListener('mousemove', moveLayers)
+
+ 
+
+
+ 

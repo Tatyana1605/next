@@ -67,16 +67,15 @@
 }
 
 .aside__blog {
-  padding-right: 50px;
-  padding-left: 50px;
-
+  
+  width: 80%;
   position: sticky;
   top: 0;
 
   &.fixed {
     position: fixed;
     top: 0;
-    width: 22%;
+    width: 20%;
 
     @media (max-width: 992px) {
       width: 80%;

@@ -16,10 +16,12 @@ block content
       .header__top
         .header__top_left
           ul.socials
-            -var socials = ['vk', 'gh', 'in']
-            each item in socials
-              li.socials__item
-                a(href="" class=`socials__link_white_${item}`).socials__link.socials__link_white
+            li.socials__item
+              a(href="https://vk.com/id337442903" ).socials__link.socials__link_white_vk
+            li.socials__item
+              a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_white_gh
+            li.socials__item
+              a(href="https://github.com/Tatyana1605" ).socials__link.socials__link_white_in
             
         .header__top_right
           a(href="#").btn__nav
@@ -92,11 +94,27 @@ block content
           .subtitle Контакты
         .user-data__container
           ul.user-contacts-list
-            each item in ['skype', 'mail', 'tel', 'adress']
-              li.user-contacts-list__item
-                .contacts-cell
-                  .contacts-cell__icon(class=`contacts-cell__icon_${item}`)
-                  a(href="#").contacts-cell__title #{item}
+            li.user-contacts-list__item
+              .contacts-cell
+                .contacts-cell__icon.contacts-cell__icon_skype
+                a(href="tiponomareva88").contacts-cell__title tiponomareva88
+            li.user-contacts-list__item
+              .contacts-cell
+                .contacts-cell__icon.contacts-cell__icon_mail
+                a(href="tiponomareva88@gmail.com").contacts-cell__title tiponomareva88@gmail.com
+            li.user-contacts-list__item
+              .contacts-cell
+                .contacts-cell__icon.contacts-cell__icon_tel
+                a(href="8-929-012-61-21").contacts-cell__title 8-929-012-61-21
+            li.user-contacts-list__item
+              .contacts-cell
+                .contacts-cell__icon.contacts-cell__icon_adress
+                a(href="#").contacts-cell__title г.Красноярск
+            //- each item in ['skype', 'mail', 'tel', 'adress']
+            //-   li.user-contacts-list__item
+            //-     .contacts-cell
+            //-       .contacts-cell__icon(class=`contacts-cell__icon_${item}`)
+            //-       a(href="#").contacts-cell__title #{item}
 
   
   
