@@ -18,7 +18,8 @@
             td
           tr(
             v-for='post in posts'
-             
+            :key='post.id'
+            
             )
             td {{post.title}}
             td {{post.date}}
@@ -54,12 +55,12 @@
 
 import{mapActions, mapState} from 'vuex';
 
-const data = [
-  {id: 1, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
-  {id: 2, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
-  {id: 3, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
-  {id: 0, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
-];
+// const data = [
+//   {id: 1, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+//   {id: 2, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+//   {id: 3, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+//   {id: 0, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+// ];
 
 export default {
   components: {
@@ -74,7 +75,12 @@ export default {
 
    data() {
     return {
-      posts: data,
+      postss: [
+        {id: 1, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+        {id: 2, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+        {id: 3, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+        {id: 0, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+      ],
       editmode: false,
       post : {
         id: 0, 

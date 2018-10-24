@@ -18,10 +18,10 @@ const skills = {
       this.$axios.get("/skills/${user_id}").then(response =>{
         // console.log(response);
         commit("loadSkills", response.data)
-      }
-      // error =>{
-      //   console.error(error)
-      //   }
+      },
+      error =>{
+        console.error(error)
+        }
       );
     },
     add({commit}, skill) {
@@ -29,20 +29,20 @@ const skills = {
       this.$axios.post("/skills", skill).then(
         response => {
           commit("addNewSkill", response.data)
+      },
+      error => {
+        console.error(error);
       }
-      // error => {
-      //   console.error(error);
-      // }
       );
     },
     remove({commit}, skillId) {
       this.$axios.delete(`/skills/${skillId}`).then(
         response => {
          commit("removeSkill", skillId)
+      },
+       error => {
+        console.error(error);
       }
-      //  error => {
-      //   console.error(error);
-      // }
       );
 
     }
