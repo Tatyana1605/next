@@ -16,34 +16,37 @@
             td Дата
             td Содержание
             td
-          tr(v-for='post in posts')
+          tr(
+            v-for='post in posts'
+             
+            )
             td {{post.title}}
             td {{post.date}}
             td {{post.content}}
             td
               button(type="button" @click="removePost(post.id)" ) удалить
               button(type="button" @click="fillUpFormWithData(post)") изменит
-          tr.tr__color_beige
-            td Мой первый сайт 
-            td 25.07.2018г
-            td Сайт авиакомпании
-            td 
-              button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
-              button(type="button" @click="removePost(post.id)" ).button_delet удалить
-          tr.tr__color
-            td Мой второй сайт
-            td 25.08.2018г
-            td Сайт бургер
-            td 
-              button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
-              button(type="button" @click="removePost(post.id)" ).button_delet удалить
-          tr.tr__color_beige
-            td Мой третий сайт
-            td 10.10.2018г
-            td Сайт-визитка
-            td 
-              button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
-              button(type="button" @click="removePost(post.id)" ).button_delet удалить
+          //- tr.tr__color_beige
+          //-   td Мой первый сайт 
+          //-   td 25.07.2018г
+          //-   td Сайт авиакомпании
+          //-   td 
+          //-     button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
+          //-     button(type="button" @click="removePost(post.id)" ).button_delet удалить
+          //- tr.tr__color
+          //-   td Мой второй сайт
+          //-   td 25.08.2018г
+          //-   td Сайт бургер
+          //-   td 
+          //-     button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
+          //-     button(type="button" @click="removePost(post.id)" ).button_delet удалить
+          //- tr.tr__color_beige
+          //-   td Мой третий сайт
+          //-   td  Мой первый сайт
+          //-   td Сайт-визитка
+          //-   td 
+          //-     button(type="button" @click="fillUpFormWithData(post)").button_rename редактирование
+          //-     button(type="button" @click="removePost(post.id)" ).button_delet удалить
 </template>
 
 
@@ -51,13 +54,27 @@
 
 import{mapActions, mapState} from 'vuex';
 
+const data = [
+  {id: 1, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+  {id: 2, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+  {id: 3, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+  {id: 0, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+];
+
 export default {
   components: {
-    
+   
   },
+    // props: {
+    //   posts: {
+    //     type: Array,
+    //     default: () => []
+    //   }
+    // },
+
    data() {
     return {
-     
+      posts: data,
       editmode: false,
       post : {
         id: 0, 

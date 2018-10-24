@@ -1,18 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import axios from "axios";
-import about from './components/about';
+import abouts from './components/about';
 import posts from './components/posts/posts';
 import works from './components/works/works';
 
 Vue.use(VueRouter);
 
 const guard = axios.create({
-  baseURL: "https://webdev-api.loftschool.com"
+  baseURL: "https://webdev-api.loftschool.com/"
 });
 
 const routes = [
-  { path: '/', name: 'about', component: about },
+  { path: '/', name: 'abouts', component: abouts },
   { path: '/posts', name: 'posts', component: posts },
   { path: '/works', name: 'works', component: works }
 

@@ -3,7 +3,9 @@
 const posts = {
   namespaced: true,
   state: {
-    data: []
+    data: [
+      
+    ]
   },
   mutations: {
     fillUpPostsData: (state, posts) => (state.data = posts),

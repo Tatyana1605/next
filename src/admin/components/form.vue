@@ -30,7 +30,7 @@ export default {
 
           localStorage.setItem('token', response.data.token);
           localStorage.setItem('ttl', ttl);
-
+          console.log('ghbdtn');
           // window.location.href = "/admin"
         }
       })

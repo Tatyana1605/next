@@ -10,37 +10,40 @@ const skills = {
     loadSkills: (state, skills) => (state.data = skills),
     addNewSkill: (state, newSkill) => state.data.push(newSkill),
     removeSkill: (state, skillId) =>
-     (state.data = state.data.filter(skill => skill.id !== skillId))
+      state.data = state.data.filter(skill => skill.id !== skillId)
   },
 
   actions: {
     fetch({commit}) {
-      this.$axios.get('/skills/${user_id}').then(response => {
-        console.log(response);
-        commit('loadSkills', response.data)
-      }, 
-      error =>{
-        console.error(error)
-        }
+      this.$axios.get("/skills/${user_id}").then(response =>{
+        // console.log(response);
+        commit("loadSkills", response.data)
+      }
+      // error =>{
+      //   console.error(error)
+      //   }
       );
     },
     add({commit}, skill) {
-      this.$axios.post('/skills', skill).then(
+      
+      this.$axios.post("/skills", skill).then(
         response => {
-          commit('addNewSkill', response.data)
-      },
-      error => {
-        console.error(error);
+          commit("addNewSkill", response.data)
       }
-      )
+      // error => {
+      //   console.error(error);
+      // }
+      );
     },
     remove({commit}, skillId) {
       this.$axios.delete(`/skills/${skillId}`).then(
         response => {
          commit("removeSkill", skillId)
-      }, error => {
-        console.error(error);
-      })
+      }
+      //  error => {
+      //   console.error(error);
+      // }
+      );
 
     }
   }

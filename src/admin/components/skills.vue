@@ -1,15 +1,14 @@
 <template lang="pug">
-.content
-  skills
-    app-form
-    h1 Страница обо мне
-    .contents
-      skills-row(
-        v-for="type in types"
-        :key="type.id"
-        :type="type"
-        :skills="skills"
-      )
+skills
+  app-form
+  h1 Страница обо мне
+  .contents
+    skills-row(
+      v-for="type in types"
+      :key="type.id"
+      :type="type"
+      :skills="skills"
+    )
 </template>
 
 

@@ -26,7 +26,7 @@
     
             axios.defaults.headers['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
     
-            window.location.href = "./admin";
+            // window.location.href = "./admin";
     
           } else {
             console.log(xhr.statusText);
