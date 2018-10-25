@@ -4,11 +4,14 @@ const posts = {
   namespaced: true,
   state: {
     data: [
-      
+      {id: 1, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+      {id: 2, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+      {id: 3, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
+      {id: 0, title: " Мой первый сайт", date: " 17.10.2018", content: "Сайт-визитка" },
     ]
   },
   mutations: {
-    fillUpPostsData: (state, posts) => (state.data = posts),
+    fillUpPostsData: (state, posts) => state.data.push(posts),
     addNewPost: (state, post) => state.data.push(post),
     removePost: (state, deletePostId) => state.data = state.data.filter(post => post.id !== deletePostId),
     editPost: (state, editedPost) => state.data = state.data.map(post => {
